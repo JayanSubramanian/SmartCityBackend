@@ -1,0 +1,9 @@
+torch
+overpy
+pandas
+numpy
+fastapi[standard]
+starlette
+torch-geometric
+scikit-learn
+uvicorn
