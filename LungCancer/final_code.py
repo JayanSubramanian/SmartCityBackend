@@ -1,11 +1,25 @@
+import os
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch_geometric.nn import GATConv
 
-X_train_tensor = torch.load('X_train_tensor.pt')
-edge_index = torch.load('edge_index.pt')
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+try:
+    X_train_tensor = torch.load(os.path.join(current_dir, 'X_train_tensor.pt'), weights_only=True, map_location=torch.device('cpu'))
+    edge_index = torch.load(os.path.join(current_dir, 'edge_index.pt'), weights_only=True, map_location=torch.device('cpu'))
+    
+    if not isinstance(X_train_tensor, torch.Tensor):
+        raise TypeError("X_train_tensor is not a valid torch tensor")
+    if not isinstance(edge_index, torch.Tensor):
+        raise TypeError("edge_index is not a valid torch tensor")
+        
+except (FileNotFoundError, RuntimeError, TypeError) as e:
+    print(f"Error loading tensor files from {current_dir}")
+    print(f"Error details: {str(e)}")
+    raise
 
 class GATWithDimensionalityReduction(nn.Module):
     def __init__(self, in_channels, hidden_channels, out_channels, reduce_dim, num_heads=4):

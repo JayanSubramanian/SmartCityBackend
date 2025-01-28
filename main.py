@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, Query, HTTPException, Request
+from fastapi import FastAPI, UploadFile, Query, HTTPException, Request, File
 from fastapi.responses import JSONResponse
 import torch
 from LungCancer.final_code import GATWithDimensionalityReduction, in_channels, hidden_channels, out_channels, reduce_dim, num_heads
@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import overpy
 import os
 import uvicorn
-from WasteClassification.chat import config, inverse_kinematics, process_image, run_chat_model
+from WasteClassification.chat import inverse_kinematics, process_image, run_chat_model
 
 app = FastAPI()
 
@@ -21,11 +21,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = GATWithDimensionalityReduction(in_channels=in_channels, hidden_channels=hidden_channels, out_channels=out_channels, reduce_dim=reduce_dim, num_heads=num_heads)
-model.load_state_dict(torch.load("GATWithDimensionalityReduction.pth", map_location=torch.device('cpu'), weights_only=True))
-model.eval()
+current_dir = os.path.dirname(os.path.abspath(__file__))
+lung_cancer_dir = os.path.join(current_dir, "LungCancer")
 
-config()
+model = GATWithDimensionalityReduction(in_channels=in_channels, hidden_channels=hidden_channels, out_channels=out_channels, reduce_dim=reduce_dim, num_heads=num_heads)
+model.load_state_dict(torch.load(os.path.join(lung_cancer_dir, "GATWithDimensionalityReduction.pth"), map_location=torch.device('cpu'), weights_only=True))
+model.eval()
 
 @app.post("/predict")
 async def predict(files: List[UploadFile]):
@@ -37,7 +38,7 @@ async def predict(files: List[UploadFile]):
 
 @app.get("/", response_class=RedirectResponse)
 async def redirect():
-    return RedirectResponse(url="http://localhost:3000/home")
+    return RedirectResponse(url="http://localhost:5173/")
 
 api = overpy.Overpass()
 
@@ -64,10 +65,9 @@ async def search_poi(
     return result[:limit]
 
 @app.post("/process_image")
-def process_image():
-    img_str, file = process_image(Request)
-
-    classification_result = run_chat_model(img_str, file)
+async def classify(image: UploadFile = File(...)):
+    img_str, uploaded_file = await process_image(image)
+    classification_result = run_chat_model(img_str, uploaded_file)
 
     return JSONResponse({
         'classification': classification_result,

@@ -5,11 +5,14 @@ import io
 import base64
 import PIL.Image as Image
 from fastapi.responses import JSONResponse
-from fastapi import Request
+from fastapi import UploadFile
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dotenv_path = os.path.join(project_root, '.env')
+
+load_dotenv(dotenv_path)
 
 GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 
@@ -32,12 +35,11 @@ def inverse_kinematics(x, y):
     
     return theta1, theta2
 
-def process_image(Request):
-    file = Request.files['image']
-    if file.filename == '':
+async def process_image(file: UploadFile):
+    if not file:
         return JSONResponse({'error': 'No selected file'}), 400
 
-    image_bytes = file.read()
+    image_bytes = await file.read()
     image = Image.open(io.BytesIO(image_bytes))
     
     buffered = io.BytesIO()
