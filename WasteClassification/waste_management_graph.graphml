@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="weight" attr.type="long"/>
+<key id="d1" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Textile Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Agricultural Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Organic Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Mixed Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Hazardous Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Biomedical Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="E-Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Paper Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Construction &amp; Demolition Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Glass Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Metal Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Plastic Waste">
+  <data key="d0">Waste Type</data>
+</node>
+<node id="Commercial">
+  <data key="d0">Source</data>
+</node>
+<node id="Industrial">
+  <data key="d0">Source</data>
+</node>
+<node id="Hospital">
+  <data key="d0">Source</data>
+</node>
+<node id="Agricultural">
+  <data key="d0">Source</data>
+</node>
+<node id="Household">
+  <data key="d0">Source</data>
+</node>
+<node id="Landfill">
+  <data key="d0">Disposal Method</data>
+</node>
+<node id="Incineration">
+  <data key="d0">Disposal Method</data>
+</node>
+<node id="Recycling">
+  <data key="d0">Disposal Method</data>
+</node>
+<node id="Composting">
+  <data key="d0">Disposal Method</data>
+</node>
+<node id="Zone A">
+  <data key="d0">Area Name</data>
+</node>
+<node id="Zone E">
+  <data key="d0">Area Name</data>
+</node>
+<node id="Zone B">
+  <data key="d0">Area Name</data>
+</node>
+<node id="Zone C">
+  <data key="d0">Area Name</data>
+</node>
+<node id="Zone D">
+  <data key="d0">Area Name</data>
+</node>
+<node id="Monthly">
+  <data key="d0">Collection Frequency</data>
+</node>
+<node id="Weekly">
+  <data key="d0">Collection Frequency</data>
+</node>
+<node id="Bi-Weekly">
+  <data key="d0">Collection Frequency</data>
+</node>
+<node id="Daily">
+  <data key="d0">Collection Frequency</data>
+</node>
+<edge source="Textile Waste" target="Commercial">
+  <data key="d1">330.43</data>
+</edge>
+<edge source="Textile Waste" target="Landfill">
+  <data key="d1">298.12</data>
+</edge>
+<edge source="Textile Waste" target="Zone A">
+  <data key="d1">298.12</data>
+</edge>
+<edge source="Textile Waste" target="Hospital">
+  <data key="d1">333.15</data>
+</edge>
+<edge source="Textile Waste" target="Zone D">
+  <data key="d1">456.33</data>
+</edge>
+<edge source="Textile Waste" target="Agricultural">
+  <data key="d1">115.78</data>
+</edge>
+<edge source="Textile Waste" target="Recycling">
+  <data key="d1">115.6</data>
+</edge>
+<edge source="Textile Waste" target="Zone B">
+  <data key="d1">111.55</data>
+</edge>
+<edge source="Textile Waste" target="Zone C">
+  <data key="d1">115.6</data>
+</edge>
+<edge source="Textile Waste" target="Household">
+  <data key="d1">456.33</data>
+</edge>
+<edge source="Textile Waste" target="Composting">
+  <data key="d1">456.33</data>
+</edge>
+<edge source="Textile Waste" target="Zone E">
+  <data key="d1">330.43</data>
+</edge>
+<edge source="Textile Waste" target="Incineration">
+  <data key="d1">115.78</data>
+</edge>
+<edge source="Textile Waste" target="Industrial">
+  <data key="d1">298.12</data>
+</edge>
+<edge source="Agricultural Waste" target="Commercial">
+  <data key="d1">284.87</data>
+</edge>
+<edge source="Agricultural Waste" target="Incineration">
+  <data key="d1">284.87</data>
+</edge>
+<edge source="Agricultural Waste" target="Zone E">
+  <data key="d1">168.3</data>
+</edge>
+<edge source="Agricultural Waste" target="Composting">
+  <data key="d1">140.62</data>
+</edge>
+<edge source="Agricultural Waste" target="Zone C">
+  <data key="d1">140.62</data>
+</edge>
+<edge source="Agricultural Waste" target="Agricultural">
+  <data key="d1">312.76</data>
+</edge>
+<edge source="Agricultural Waste" target="Zone D">
+  <data key="d1">290.47</data>
+</edge>
+<edge source="Agricultural Waste" target="Household">
+  <data key="d1">172.79</data>
+</edge>
+<edge source="Agricultural Waste" target="Recycling">
+  <data key="d1">312.76</data>
+</edge>
+<edge source="Agricultural Waste" target="Zone A">
+  <data key="d1">284.87</data>
+</edge>
+<edge source="Agricultural Waste" target="Hospital">
+  <data key="d1">392.43</data>
+</edge>
+<edge source="Agricultural Waste" target="Landfill">
+  <data key="d1">172.79</data>
+</edge>
+<edge source="Agricultural Waste" target="Industrial">
+  <data key="d1">489.49</data>
+</edge>
+<edge source="Agricultural Waste" target="Zone B">
+  <data key="d1">172.79</data>
+</edge>
+<edge source="Organic Waste" target="Industrial">
+  <data key="d1">415.27</data>
+</edge>
+<edge source="Organic Waste" target="Incineration">
+  <data key="d1">415.27</data>
+</edge>
+<edge source="Organic Waste" target="Zone B">
+  <data key="d1">415.27</data>
+</edge>
+<edge source="Organic Waste" target="Commercial">
+  <data key="d1">220.94</data>
+</edge>
+<edge source="Organic Waste" target="Zone C">
+  <data key="d1">225.84</data>
+</edge>
+<edge source="Organic Waste" target="Agricultural">
+  <data key="d1">161.78</data>
+</edge>
+<edge source="Organic Waste" target="Landfill">
+  <data key="d1">220.94</data>
+</edge>
+<edge source="Organic Waste" target="Zone D">
+  <data key="d1">87.53</data>
+</edge>
+<edge source="Organic Waste" target="Household">
+  <data key="d1">28.01</data>
+</edge>
+<edge source="Organic Waste" target="Composting">
+  <data key="d1">349.02</data>
+</edge>
+<edge source="Organic Waste" target="Zone E">
+  <data key="d1">249.44</data>
+</edge>
+<edge source="Organic Waste" target="Zone A">
+  <data key="d1">28.01</data>
+</edge>
+<edge source="Organic Waste" target="Hospital">
+  <data key="d1">87.53</data>
+</edge>
+<edge source="Organic Waste" target="Recycling">
+  <data key="d1">28.01</data>
+</edge>
+<edge source="Mixed Waste" target="Agricultural">
+  <data key="d1">238.34</data>
+</edge>
+<edge source="Mixed Waste" target="Landfill">
+  <data key="d1">48.74</data>
+</edge>
+<edge source="Mixed Waste" target="Zone E">
+  <data key="d1">246.54</data>
+</edge>
+<edge source="Mixed Waste" target="Commercial">
+  <data key="d1">407.46</data>
+</edge>
+<edge source="Mixed Waste" target="Incineration">
+  <data key="d1">301.32</data>
+</edge>
+<edge source="Mixed Waste" target="Zone C">
+  <data key="d1">238.34</data>
+</edge>
+<edge source="Mixed Waste" target="Hospital">
+  <data key="d1">48.74</data>
+</edge>
+<edge source="Mixed Waste" target="Recycling">
+  <data key="d1">36.87</data>
+</edge>
+<edge source="Mixed Waste" target="Industrial">
+  <data key="d1">301.32</data>
+</edge>
+<edge source="Mixed Waste" target="Zone A">
+  <data key="d1">339.96</data>
+</edge>
+<edge source="Mixed Waste" target="Composting">
+  <data key="d1">238.34</data>
+</edge>
+<edge source="Mixed Waste" target="Zone D">
+  <data key="d1">146.21</data>
+</edge>
+<edge source="Mixed Waste" target="Household">
+  <data key="d1">416.62</data>
+</edge>
+<edge source="Mixed Waste" target="Zone B">
+  <data key="d1">301.32</data>
+</edge>
+<edge source="Hazardous Waste" target="Hospital">
+  <data key="d1">234.29</data>
+</edge>
+<edge source="Hazardous Waste" target="Incineration">
+  <data key="d1">371.69</data>
+</edge>
+<edge source="Hazardous Waste" target="Zone B">
+  <data key="d1">212.34</data>
+</edge>
+<edge source="Hazardous Waste" target="Landfill">
+  <data key="d1">456.24</data>
+</edge>
+<edge source="Hazardous Waste" target="Composting">
+  <data key="d1">108.78</data>
+</edge>
+<edge source="Hazardous Waste" target="Commercial">
+  <data key="d1">295.1</data>
+</edge>
+<edge source="Hazardous Waste" target="Zone D">
+  <data key="d1">310.84</data>
+</edge>
+<edge source="Hazardous Waste" target="Agricultural">
+  <data key="d1">356.03</data>
+</edge>
+<edge source="Hazardous Waste" target="Zone A">
+  <data key="d1">295.1</data>
+</edge>
+<edge source="Hazardous Waste" target="Recycling">
+  <data key="d1">295.1</data>
+</edge>
+<edge source="Hazardous Waste" target="Industrial">
+  <data key="d1">493.24</data>
+</edge>
+<edge source="Hazardous Waste" target="Zone E">
+  <data key="d1">108.78</data>
+</edge>
+<edge source="Hazardous Waste" target="Zone C">
+  <data key="d1">371.69</data>
+</edge>
+<edge source="Hazardous Waste" target="Household">
+  <data key="d1">371.69</data>
+</edge>
+<edge source="Biomedical Waste" target="Household">
+  <data key="d1">244.38</data>
+</edge>
+<edge source="Biomedical Waste" target="Recycling">
+  <data key="d1">65.54</data>
+</edge>
+<edge source="Biomedical Waste" target="Zone E">
+  <data key="d1">307.84</data>
+</edge>
+<edge source="Biomedical Waste" target="Hospital">
+  <data key="d1">476.73</data>
+</edge>
+<edge source="Biomedical Waste" target="Composting">
+  <data key="d1">329.5</data>
+</edge>
+<edge source="Biomedical Waste" target="Zone C">
+  <data key="d1">392.69</data>
+</edge>
+<edge source="Biomedical Waste" target="Agricultural">
+  <data key="d1">288.5</data>
+</edge>
+<edge source="Biomedical Waste" target="Commercial">
+  <data key="d1">65.54</data>
+</edge>
+<edge source="Biomedical Waste" target="Zone A">
+  <data key="d1">65.54</data>
+</edge>
+<edge source="Biomedical Waste" target="Landfill">
+  <data key="d1">392.69</data>
+</edge>
+<edge source="Biomedical Waste" target="Zone D">
+  <data key="d1">304.49</data>
+</edge>
+<edge source="Biomedical Waste" target="Zone B">
+  <data key="d1">470.66</data>
+</edge>
+<edge source="Biomedical Waste" target="Industrial">
+  <data key="d1">304.49</data>
+</edge>
+<edge source="Biomedical Waste" target="Incineration">
+  <data key="d1">304.49</data>
+</edge>
+<edge source="E-Waste" target="Industrial">
+  <data key="d1">335.75</data>
+</edge>
+<edge source="E-Waste" target="Composting">
+  <data key="d1">175.77</data>
+</edge>
+<edge source="E-Waste" target="Zone B">
+  <data key="d1">175.77</data>
+</edge>
+<edge source="E-Waste" target="Hospital">
+  <data key="d1">153.16</data>
+</edge>
+<edge source="E-Waste" target="Recycling">
+  <data key="d1">147.63</data>
+</edge>
+<edge source="E-Waste" target="Zone C">
+  <data key="d1">417.06</data>
+</edge>
+<edge source="E-Waste" target="Incineration">
+  <data key="d1">153.16</data>
+</edge>
+<edge source="E-Waste" target="Zone A">
+  <data key="d1">379.64</data>
+</edge>
+<edge source="E-Waste" target="Zone E">
+  <data key="d1">80.85</data>
+</edge>
+<edge source="E-Waste" target="Agricultural">
+  <data key="d1">138.45</data>
+</edge>
+<edge source="E-Waste" target="Landfill">
+  <data key="d1">138.45</data>
+</edge>
+<edge source="E-Waste" target="Commercial">
+  <data key="d1">417.06</data>
+</edge>
+<edge source="E-Waste" target="Zone D">
+  <data key="d1">138.45</data>
+</edge>
+<edge source="E-Waste" target="Household">
+  <data key="d1">169.18</data>
+</edge>
+<edge source="Paper Waste" target="Industrial">
+  <data key="d1">209.02</data>
+</edge>
+<edge source="Paper Waste" target="Incineration">
+  <data key="d1">397.98</data>
+</edge>
+<edge source="Paper Waste" target="Zone E">
+  <data key="d1">127.26</data>
+</edge>
+<edge source="Paper Waste" target="Composting">
+  <data key="d1">369.99</data>
+</edge>
+<edge source="Paper Waste" target="Zone C">
+  <data key="d1">417.0</data>
+</edge>
+<edge source="Paper Waste" target="Household">
+  <data key="d1">397.98</data>
+</edge>
+<edge source="Paper Waste" target="Recycling">
+  <data key="d1">486.17</data>
+</edge>
+<edge source="Paper Waste" target="Zone B">
+  <data key="d1">397.98</data>
+</edge>
+<edge source="Paper Waste" target="Landfill">
+  <data key="d1">306.16</data>
+</edge>
+<edge source="Paper Waste" target="Zone A">
+  <data key="d1">209.02</data>
+</edge>
+<edge source="Paper Waste" target="Agricultural">
+  <data key="d1">11.76</data>
+</edge>
+<edge source="Paper Waste" target="Zone D">
+  <data key="d1">486.17</data>
+</edge>
+<edge source="Paper Waste" target="Commercial">
+  <data key="d1">486.17</data>
+</edge>
+<edge source="Paper Waste" target="Hospital">
+  <data key="d1">417.0</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Agricultural">
+  <data key="d1">372.11</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Incineration">
+  <data key="d1">411.26</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Zone C">
+  <data key="d1">408.95</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Household">
+  <data key="d1">64.7</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Recycling">
+  <data key="d1">205.48</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Zone D">
+  <data key="d1">258.68</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Industrial">
+  <data key="d1">349.92</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Commercial">
+  <data key="d1">205.48</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Composting">
+  <data key="d1">30.61</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Hospital">
+  <data key="d1">411.26</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Zone E">
+  <data key="d1">64.7</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Zone B">
+  <data key="d1">372.11</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Zone A">
+  <data key="d1">411.26</data>
+</edge>
+<edge source="Construction &amp; Demolition Waste" target="Landfill">
+  <data key="d1">372.11</data>
+</edge>
+<edge source="Glass Waste" target="Agricultural">
+  <data key="d1">279.76</data>
+</edge>
+<edge source="Glass Waste" target="Recycling">
+  <data key="d1">298.33</data>
+</edge>
+<edge source="Glass Waste" target="Zone B">
+  <data key="d1">279.76</data>
+</edge>
+<edge source="Glass Waste" target="Industrial">
+  <data key="d1">298.33</data>
+</edge>
+<edge source="Glass Waste" target="Composting">
+  <data key="d1">319.36</data>
+</edge>
+<edge source="Glass Waste" target="Zone A">
+  <data key="d1">321.77</data>
+</edge>
+<edge source="Glass Waste" target="Hospital">
+  <data key="d1">489.37</data>
+</edge>
+<edge source="Glass Waste" target="Incineration">
+  <data key="d1">279.76</data>
+</edge>
+<edge source="Glass Waste" target="Zone D">
+  <data key="d1">266.55</data>
+</edge>
+<edge source="Glass Waste" target="Landfill">
+  <data key="d1">302.66</data>
+</edge>
+<edge source="Glass Waste" target="Zone E">
+  <data key="d1">319.36</data>
+</edge>
+<edge source="Glass Waste" target="Household">
+  <data key="d1">36.5</data>
+</edge>
+<edge source="Glass Waste" target="Zone C">
+  <data key="d1">298.33</data>
+</edge>
+<edge source="Glass Waste" target="Commercial">
+  <data key="d1">319.36</data>
+</edge>
+<edge source="Metal Waste" target="Commercial">
+  <data key="d1">96.24</data>
+</edge>
+<edge source="Metal Waste" target="Landfill">
+  <data key="d1">496.77</data>
+</edge>
+<edge source="Metal Waste" target="Zone D">
+  <data key="d1">491.95</data>
+</edge>
+<edge source="Metal Waste" target="Composting">
+  <data key="d1">173.39</data>
+</edge>
+<edge source="Metal Waste" target="Zone A">
+  <data key="d1">143.7</data>
+</edge>
+<edge source="Metal Waste" target="Agricultural">
+  <data key="d1">496.77</data>
+</edge>
+<edge source="Metal Waste" target="Zone C">
+  <data key="d1">495.82</data>
+</edge>
+<edge source="Metal Waste" target="Recycling">
+  <data key="d1">143.7</data>
+</edge>
+<edge source="Metal Waste" target="Industrial">
+  <data key="d1">495.82</data>
+</edge>
+<edge source="Metal Waste" target="Household">
+  <data key="d1">87.24</data>
+</edge>
+<edge source="Metal Waste" target="Zone B">
+  <data key="d1">496.77</data>
+</edge>
+<edge source="Metal Waste" target="Hospital">
+  <data key="d1">256.95</data>
+</edge>
+<edge source="Metal Waste" target="Zone E">
+  <data key="d1">256.95</data>
+</edge>
+<edge source="Metal Waste" target="Incineration">
+  <data key="d1">96.24</data>
+</edge>
+<edge source="Plastic Waste" target="Hospital">
+  <data key="d1">63.13</data>
+</edge>
+<edge source="Plastic Waste" target="Incineration">
+  <data key="d1">406.88</data>
+</edge>
+<edge source="Plastic Waste" target="Zone C">
+  <data key="d1">220.77</data>
+</edge>
+<edge source="Plastic Waste" target="Household">
+  <data key="d1">374.46</data>
+</edge>
+<edge source="Plastic Waste" target="Zone B">
+  <data key="d1">242.68</data>
+</edge>
+<edge source="Plastic Waste" target="Industrial">
+  <data key="d1">220.77</data>
+</edge>
+<edge source="Plastic Waste" target="Zone D">
+  <data key="d1">175.36</data>
+</edge>
+<edge source="Plastic Waste" target="Agricultural">
+  <data key="d1">70.04</data>
+</edge>
+<edge source="Plastic Waste" target="Composting">
+  <data key="d1">361.91</data>
+</edge>
+<edge source="Plastic Waste" target="Commercial">
+  <data key="d1">242.68</data>
+</edge>
+<edge source="Plastic Waste" target="Landfill">
+  <data key="d1">242.68</data>
+</edge>
+<edge source="Plastic Waste" target="Zone A">
+  <data key="d1">295.08</data>
+</edge>
+<edge source="Plastic Waste" target="Recycling">
+  <data key="d1">220.77</data>
+</edge>
+<edge source="Plastic Waste" target="Zone E">
+  <data key="d1">5.46</data>
+</edge>
+<edge source="Zone A" target="Monthly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone A" target="Daily">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone A" target="Weekly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone A" target="Bi-Weekly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone E" target="Monthly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone E" target="Bi-Weekly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone E" target="Daily">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone E" target="Weekly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone B" target="Weekly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone B" target="Monthly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone B" target="Bi-Weekly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone B" target="Daily">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone C" target="Bi-Weekly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone C" target="Weekly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone C" target="Daily">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone C" target="Monthly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone D" target="Monthly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone D" target="Weekly">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone D" target="Daily">
+  <data key="d2">1</data>
+</edge>
+<edge source="Zone D" target="Bi-Weekly">
+  <data key="d2">1</data>
+</edge>
+</graph></graphml>

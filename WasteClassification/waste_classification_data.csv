@@ -1,0 +1,501 @@
+Area Name,Date of Collection,Waste Type,Waste Quantity (kg),Source,Recyclability Score (%),Disposal Method,Collection Frequency
+Zone A,2023-09-11,Textile Waste,203.95,Commercial,21.39,Landfill,Monthly
+Zone E,2023-07-24,Agricultural Waste,244.17,Commercial,45.43,Incineration,Monthly
+Zone B,2023-01-05,Organic Waste,466.51,Industrial,51.39,Incineration,Weekly
+Zone C,2023-02-25,Organic Waste,215.91,Commercial,55.85,Incineration,Bi-Weekly
+Zone D,2023-09-15,Textile Waste,426.5,Hospital,33.4,Landfill,Monthly
+Zone E,2023-01-11,Mixed Waste,194.92,Agricultural,25.26,Landfill,Bi-Weekly
+Zone B,2023-07-11,Hazardous Waste,177.75,Hospital,36.7,Incineration,Monthly
+Zone E,2023-01-25,Biomedical Waste,202.11,Household,53.09,Recycling,Monthly
+Zone B,2023-02-10,E-Waste,22.69,Industrial,40.58,Composting,Bi-Weekly
+Zone C,2023-06-13,Biomedical Waste,288.55,Hospital,21.87,Composting,Weekly
+Zone E,2023-08-01,Biomedical Waste,59.02,Agricultural,53.69,Composting,Monthly
+Zone E,2023-07-21,Paper Waste,351.17,Industrial,53.55,Incineration,Monthly
+Zone C,2023-09-11,Construction & Demolition Waste,65.86,Agricultural,26.4,Incineration,Bi-Weekly
+Zone C,2023-03-07,E-Waste,228.25,Hospital,88.51,Recycling,Bi-Weekly
+Zone D,2023-04-22,Construction & Demolition Waste,192.59,Household,69.28,Recycling,Weekly
+Zone B,2023-11-18,Glass Waste,200.94,Agricultural,89.35,Recycling,Monthly
+Zone D,2023-12-23,Construction & Demolition Waste,388.85,Industrial,24.41,Incineration,Weekly
+Zone D,2023-01-05,Organic Waste,337.25,Agricultural,55.11,Landfill,Monthly
+Zone D,2023-08-24,Organic Waste,141.71,Household,18.27,Composting,Monthly
+Zone D,2023-10-30,Metal Waste,303.68,Commercial,45.78,Landfill,Daily
+Zone A,2023-04-05,Glass Waste,275.68,Industrial,58.18,Composting,Daily
+Zone D,2023-11-07,Organic Waste,282.81,Industrial,59.54,Composting,Weekly
+Zone C,2023-10-17,Paper Waste,276.85,Industrial,28.0,Composting,Weekly
+Zone A,2023-10-27,Metal Waste,361.4,Commercial,88.46,Composting,Weekly
+Zone C,2023-01-30,Agricultural Waste,451.72,Commercial,36.06,Composting,Weekly
+Zone D,2023-10-13,Agricultural Waste,430.8,Agricultural,31.76,Incineration,Weekly
+Zone A,2023-10-20,Biomedical Waste,482.1,Commercial,72.01,Composting,Monthly
+Zone A,2023-01-22,Agricultural Waste,138.51,Household,28.56,Recycling,Bi-Weekly
+Zone C,2023-05-30,Mixed Waste,335.8,Commercial,79.84,Incineration,Daily
+Zone B,2023-06-24,Hazardous Waste,6.49,Hospital,29.06,Landfill,Daily
+Zone C,2023-11-17,E-Waste,398.37,Industrial,56.42,Composting,Daily
+Zone C,2023-02-22,Plastic Waste,219.76,Hospital,58.52,Incineration,Monthly
+Zone B,2023-03-23,Plastic Waste,346.73,Household,61.22,Incineration,Weekly
+Zone B,2023-06-19,Hazardous Waste,29.43,Hospital,79.4,Composting,Bi-Weekly
+Zone A,2024-01-01,E-Waste,227.01,Industrial,40.31,Incineration,Daily
+Zone E,2023-03-03,Organic Waste,207.15,Commercial,57.19,Incineration,Monthly
+Zone B,2023-07-19,Textile Waste,275.61,Agricultural,15.38,Recycling,Daily
+Zone D,2023-12-26,Hazardous Waste,306.68,Commercial,33.28,Incineration,Monthly
+Zone E,2023-02-13,Paper Waste,317.8,Household,47.6,Recycling,Daily
+Zone E,2023-07-31,Mixed Waste,331.44,Hospital,28.38,Recycling,Daily
+Zone A,2023-01-13,Biomedical Waste,461.87,Hospital,48.88,Composting,Monthly
+Zone D,2023-02-27,Biomedical Waste,18.25,Agricultural,83.79,Landfill,Monthly
+Zone A,2023-05-14,Hazardous Waste,448.24,Agricultural,31.48,Landfill,Weekly
+Zone A,2023-03-28,Mixed Waste,217.99,Industrial,84.59,Landfill,Daily
+Zone A,2023-09-02,Biomedical Waste,161.32,Commercial,56.54,Recycling,Daily
+Zone B,2023-04-07,Biomedical Waste,366.1,Commercial,28.71,Landfill,Bi-Weekly
+Zone C,2023-10-11,Organic Waste,67.34,Agricultural,12.55,Incineration,Weekly
+Zone E,2023-12-09,Mixed Waste,69.17,Agricultural,59.62,Landfill,Bi-Weekly
+Zone C,2023-11-03,Paper Waste,463.25,Household,47.18,Recycling,Monthly
+Zone C,2023-01-25,Metal Waste,265.88,Agricultural,33.69,Landfill,Daily
+Zone A,2023-06-03,Organic Waste,98.83,Agricultural,16.34,Composting,Monthly
+Zone D,2023-06-24,Metal Waste,432.65,Commercial,87.87,Recycling,Weekly
+Zone D,2023-01-29,Hazardous Waste,181.97,Hospital,25.08,Landfill,Monthly
+Zone D,2023-04-06,Plastic Waste,465.45,Industrial,76.08,Incineration,Monthly
+Zone D,2023-04-14,Construction & Demolition Waste,440.22,Commercial,61.4,Composting,Daily
+Zone C,2023-01-18,Metal Waste,178.63,Industrial,12.06,Recycling,Weekly
+Zone E,2023-01-27,Organic Waste,301.12,Household,70.15,Landfill,Monthly
+Zone B,2023-08-05,Paper Waste,497.93,Industrial,71.42,Recycling,Daily
+Zone C,2023-10-13,Textile Waste,316.24,Hospital,71.99,Recycling,Daily
+Zone A,2023-05-06,Textile Waste,66.66,Household,55.76,Composting,Bi-Weekly
+Zone D,2023-04-02,Agricultural Waste,26.28,Household,57.14,Incineration,Daily
+Zone A,2023-11-04,Agricultural Waste,365.62,Hospital,56.49,Landfill,Weekly
+Zone C,2023-10-02,Plastic Waste,62.87,Agricultural,19.56,Composting,Monthly
+Zone C,2023-03-28,Biomedical Waste,54.87,Agricultural,43.23,Landfill,Daily
+Zone A,2023-11-18,Paper Waste,337.36,Household,60.7,Landfill,Monthly
+Zone D,2023-08-10,Paper Waste,424.59,Agricultural,71.64,Incineration,Daily
+Zone D,2023-10-14,Textile Waste,196.86,Hospital,36.53,Landfill,Bi-Weekly
+Zone B,2023-03-23,Biomedical Waste,242.36,Industrial,25.75,Recycling,Weekly
+Zone A,2023-03-07,Plastic Waste,350.35,Commercial,85.65,Landfill,Weekly
+Zone A,2023-04-13,Agricultural Waste,208.84,Industrial,70.49,Composting,Bi-Weekly
+Zone A,2023-11-26,Plastic Waste,256.67,Industrial,29.79,Composting,Bi-Weekly
+Zone E,2023-04-03,E-Waste,436.74,Industrial,47.66,Incineration,Daily
+Zone B,2023-02-22,Plastic Waste,292.6,Industrial,49.19,Landfill,Weekly
+Zone C,2023-07-09,Construction & Demolition Waste,255.09,Hospital,85.61,Recycling,Weekly
+Zone C,2023-09-26,Agricultural Waste,320.5,Hospital,77.15,Recycling,Monthly
+Zone E,2023-04-09,Paper Waste,410.59,Agricultural,38.54,Incineration,Monthly
+Zone E,2023-05-11,E-Waste,495.49,Industrial,79.07,Incineration,Daily
+Zone E,2023-10-19,Construction & Demolition Waste,141.93,Commercial,22.7,Composting,Monthly
+Zone A,2023-05-12,Plastic Waste,385.95,Household,10.55,Landfill,Weekly
+Zone D,2023-06-18,Mixed Waste,232.12,Hospital,59.8,Composting,Monthly
+Zone B,2023-08-05,Construction & Demolition Waste,109.23,Agricultural,75.19,Incineration,Bi-Weekly
+Zone A,2023-08-21,Metal Waste,66.9,Household,34.9,Recycling,Bi-Weekly
+Zone A,2023-03-01,Hazardous Waste,158.88,Agricultural,21.8,Recycling,Daily
+Zone C,2023-08-09,Paper Waste,252.82,Commercial,62.22,Landfill,Monthly
+Zone E,2023-08-26,Agricultural Waste,12.13,Household,71.63,Recycling,Weekly
+Zone A,2023-04-22,Biomedical Waste,142.12,Industrial,50.89,Recycling,Monthly
+Zone A,2023-12-31,Paper Waste,283.37,Household,18.9,Composting,Monthly
+Zone C,2023-07-07,Agricultural Waste,112.32,Commercial,62.92,Incineration,Bi-Weekly
+Zone A,2023-01-16,Agricultural Waste,305.23,Agricultural,24.47,Incineration,Monthly
+Zone A,2023-05-28,Agricultural Waste,155.72,Agricultural,71.46,Composting,Bi-Weekly
+Zone E,2023-07-31,Hazardous Waste,488.86,Industrial,37.82,Incineration,Bi-Weekly
+Zone B,2023-10-14,Metal Waste,9.32,Household,51.62,Composting,Monthly
+Zone B,2023-03-31,E-Waste,225.06,Agricultural,12.52,Landfill,Daily
+Zone C,2023-10-02,Mixed Waste,436.82,Agricultural,62.63,Incineration,Monthly
+Zone A,2023-10-09,Glass Waste,24.05,Hospital,65.79,Recycling,Daily
+Zone A,2023-12-25,Metal Waste,291.22,Industrial,54.71,Composting,Weekly
+Zone A,2023-10-26,Construction & Demolition Waste,348.94,Agricultural,32.01,Incineration,Bi-Weekly
+Zone A,2023-09-16,Mixed Waste,190.17,Household,79.43,Composting,Monthly
+Zone A,2023-12-31,Construction & Demolition Waste,48.45,Commercial,48.92,Incineration,Weekly
+Zone E,2023-03-25,Textile Waste,296.63,Hospital,60.21,Recycling,Bi-Weekly
+Zone D,2023-03-20,E-Waste,355.79,Commercial,62.13,Incineration,Bi-Weekly
+Zone D,2024-01-01,Metal Waste,64.62,Commercial,48.63,Landfill,Daily
+Zone C,2023-12-31,Paper Waste,408.37,Commercial,45.03,Incineration,Daily
+Zone C,2023-11-11,Mixed Waste,283.72,Agricultural,23.15,Composting,Monthly
+Zone D,2023-07-10,E-Waste,436.83,Household,47.69,Recycling,Monthly
+Zone A,2023-12-30,E-Waste,162.34,Industrial,35.57,Incineration,Monthly
+Zone C,2023-07-03,Plastic Waste,141.54,Industrial,23.82,Composting,Weekly
+Zone C,2023-11-29,Metal Waste,398.32,Hospital,82.38,Landfill,Weekly
+Zone A,2023-01-25,Agricultural Waste,148.62,Hospital,69.25,Composting,Daily
+Zone B,2023-12-17,Paper Waste,497.41,Commercial,38.3,Composting,Bi-Weekly
+Zone E,2023-03-20,Textile Waste,484.87,Agricultural,87.85,Composting,Monthly
+Zone D,2023-03-22,Biomedical Waste,318.79,Commercial,16.8,Landfill,Daily
+Zone D,2023-02-23,Glass Waste,349.26,Hospital,36.92,Incineration,Monthly
+Zone A,2023-06-16,Hazardous Waste,160.7,Hospital,56.81,Recycling,Weekly
+Zone A,2023-12-09,Construction & Demolition Waste,423.29,Household,38.79,Landfill,Bi-Weekly
+Zone B,2023-10-24,Agricultural Waste,289.14,Hospital,68.5,Recycling,Monthly
+Zone A,2023-09-23,Agricultural Waste,372.32,Household,21.21,Landfill,Daily
+Zone A,2023-08-02,Agricultural Waste,372.97,Hospital,11.16,Composting,Monthly
+Zone B,2023-12-03,Agricultural Waste,52.25,Hospital,11.02,Recycling,Bi-Weekly
+Zone D,2023-06-21,Hazardous Waste,41.91,Agricultural,39.3,Composting,Weekly
+Zone D,2023-01-23,Metal Waste,247.58,Industrial,20.87,Landfill,Monthly
+Zone E,2023-12-12,Agricultural Waste,9.52,Industrial,19.41,Composting,Bi-Weekly
+Zone A,2023-03-20,Textile Waste,473.05,Commercial,31.86,Recycling,Bi-Weekly
+Zone D,2023-04-06,Hazardous Waste,443.14,Agricultural,81.95,Landfill,Monthly
+Zone D,2023-03-14,E-Waste,410.03,Agricultural,17.56,Landfill,Weekly
+Zone E,2023-08-28,Glass Waste,380.72,Industrial,87.69,Landfill,Daily
+Zone D,2023-04-21,Mixed Waste,24.75,Household,86.35,Recycling,Monthly
+Zone E,2023-06-04,Agricultural Waste,137.24,Industrial,81.11,Incineration,Bi-Weekly
+Zone C,2023-10-30,Plastic Waste,334.4,Industrial,37.11,Landfill,Monthly
+Zone E,2023-03-16,E-Waste,108.05,Agricultural,33.95,Composting,Monthly
+Zone B,2023-12-13,Paper Waste,93.69,Agricultural,77.67,Composting,Monthly
+Zone B,2023-12-30,Metal Waste,378.79,Agricultural,25.72,Landfill,Monthly
+Zone B,2023-01-31,Construction & Demolition Waste,427.38,Commercial,26.25,Recycling,Daily
+Zone C,2023-11-20,Plastic Waste,247.63,Industrial,13.41,Recycling,Bi-Weekly
+Zone A,2023-05-24,Textile Waste,115.65,Agricultural,75.21,Composting,Weekly
+Zone C,2023-05-18,Agricultural Waste,11.95,Household,81.9,Landfill,Monthly
+Zone A,2024-01-01,Glass Waste,63.44,Agricultural,23.88,Composting,Monthly
+Zone C,2023-06-14,Paper Waste,278.81,Commercial,60.06,Landfill,Monthly
+Zone A,2023-09-30,Agricultural Waste,485.96,Agricultural,25.68,Incineration,Weekly
+Zone B,2023-07-09,E-Waste,34.38,Household,52.74,Incineration,Weekly
+Zone E,2023-09-18,Mixed Waste,172.6,Industrial,44.03,Composting,Weekly
+Zone D,2023-06-05,Glass Waste,324.31,Agricultural,82.15,Incineration,Bi-Weekly
+Zone E,2023-01-16,Organic Waste,409.59,Agricultural,67.15,Incineration,Weekly
+Zone D,2023-01-01,Biomedical Waste,388.59,Commercial,44.01,Composting,Bi-Weekly
+Zone D,2023-06-07,Metal Waste,415.54,Commercial,10.51,Composting,Daily
+Zone C,2023-06-29,Construction & Demolition Waste,65.5,Agricultural,57.78,Composting,Monthly
+Zone E,2023-04-20,E-Waste,422.8,Agricultural,55.55,Composting,Daily
+Zone D,2023-02-02,E-Waste,336.63,Commercial,30.39,Landfill,Weekly
+Zone E,2023-01-29,Paper Waste,393.0,Commercial,37.64,Landfill,Weekly
+Zone C,2023-06-05,Metal Waste,171.66,Agricultural,21.95,Recycling,Bi-Weekly
+Zone A,2023-04-21,Organic Waste,295.97,Agricultural,69.1,Landfill,Weekly
+Zone B,2023-07-10,Paper Waste,109.86,Household,43.14,Landfill,Bi-Weekly
+Zone C,2023-08-28,Hazardous Waste,349.18,Hospital,57.55,Incineration,Daily
+Zone C,2023-09-06,E-Waste,292.24,Household,60.31,Recycling,Monthly
+Zone B,2023-08-05,Plastic Waste,171.79,Agricultural,31.37,Incineration,Monthly
+Zone A,2023-05-21,Paper Waste,480.89,Household,78.75,Composting,Monthly
+Zone B,2023-11-22,Organic Waste,86.51,Household,60.02,Incineration,Daily
+Zone A,2023-11-05,Construction & Demolition Waste,214.17,Household,28.09,Composting,Bi-Weekly
+Zone A,2023-07-07,E-Waste,456.29,Industrial,38.27,Landfill,Monthly
+Zone E,2023-12-31,Biomedical Waste,5.71,Hospital,25.15,Incineration,Weekly
+Zone B,2023-03-14,Biomedical Waste,353.56,Agricultural,23.85,Composting,Daily
+Zone A,2023-04-17,Plastic Waste,190.04,Agricultural,16.56,Recycling,Monthly
+Zone D,2023-09-12,Construction & Demolition Waste,13.79,Household,53.05,Incineration,Daily
+Zone E,2023-10-23,Glass Waste,88.89,Household,37.28,Composting,Daily
+Zone A,2023-04-22,Metal Waste,151.78,Commercial,18.94,Composting,Monthly
+Zone B,2023-04-07,Metal Waste,123.6,Household,14.96,Composting,Monthly
+Zone A,2023-08-29,E-Waste,43.27,Industrial,16.61,Composting,Bi-Weekly
+Zone E,2023-03-13,Biomedical Waste,264.86,Commercial,34.9,Composting,Weekly
+Zone C,2023-12-03,Glass Waste,21.3,Agricultural,89.7,Incineration,Daily
+Zone D,2023-03-26,Glass Waste,191.77,Commercial,11.66,Composting,Monthly
+Zone A,2023-05-30,Paper Waste,399.08,Hospital,14.39,Incineration,Weekly
+Zone A,2023-01-17,Construction & Demolition Waste,110.2,Industrial,71.1,Recycling,Monthly
+Zone A,2023-06-13,Biomedical Waste,240.56,Commercial,17.69,Composting,Bi-Weekly
+Zone B,2023-01-04,Agricultural Waste,62.67,Industrial,60.9,Landfill,Daily
+Zone C,2023-06-30,Agricultural Waste,487.81,Household,15.5,Recycling,Weekly
+Zone B,2023-10-27,E-Waste,359.44,Agricultural,86.33,Composting,Daily
+Zone A,2023-03-01,Glass Waste,353.52,Agricultural,81.34,Landfill,Bi-Weekly
+Zone B,2023-12-12,Plastic Waste,199.1,Commercial,63.07,Recycling,Weekly
+Zone D,2023-05-16,Plastic Waste,346.66,Commercial,59.94,Incineration,Daily
+Zone D,2023-08-12,Construction & Demolition Waste,425.62,Agricultural,42.59,Recycling,Weekly
+Zone D,2023-09-24,Agricultural Waste,353.61,Commercial,34.97,Landfill,Daily
+Zone E,2024-01-01,Mixed Waste,98.78,Hospital,84.51,Recycling,Weekly
+Zone B,2023-07-03,Agricultural Waste,159.99,Household,23.72,Composting,Weekly
+Zone C,2023-03-18,Paper Waste,324.06,Agricultural,22.55,Recycling,Bi-Weekly
+Zone B,2023-10-14,Mixed Waste,207.21,Commercial,47.11,Recycling,Weekly
+Zone E,2023-03-03,Plastic Waste,206.0,Commercial,47.76,Composting,Bi-Weekly
+Zone A,2023-10-08,Hazardous Waste,103.09,Agricultural,31.67,Recycling,Monthly
+Zone B,2023-02-14,Textile Waste,414.77,Agricultural,20.72,Recycling,Monthly
+Zone D,2023-11-04,Mixed Waste,400.38,Commercial,35.09,Recycling,Monthly
+Zone D,2023-02-24,Metal Waste,311.87,Agricultural,87.86,Landfill,Daily
+Zone D,2023-03-14,E-Waste,303.59,Hospital,20.61,Landfill,Monthly
+Zone B,2023-01-03,Paper Waste,344.18,Hospital,89.16,Composting,Bi-Weekly
+Zone A,2023-04-12,Biomedical Waste,178.63,Agricultural,10.06,Composting,Daily
+Zone C,2023-11-03,Organic Waste,456.21,Hospital,37.73,Composting,Monthly
+Zone C,2023-11-26,Mixed Waste,252.1,Commercial,32.99,Landfill,Monthly
+Zone B,2023-07-15,Mixed Waste,376.75,Agricultural,32.72,Recycling,Weekly
+Zone D,2023-12-27,Paper Waste,427.87,Commercial,28.89,Composting,Weekly
+Zone A,2023-08-15,Plastic Waste,458.16,Hospital,24.1,Composting,Weekly
+Zone A,2023-08-05,Agricultural Waste,292.0,Household,17.36,Recycling,Bi-Weekly
+Zone E,2023-07-17,Metal Waste,199.51,Industrial,79.21,Recycling,Bi-Weekly
+Zone E,2023-01-31,Construction & Demolition Waste,13.81,Commercial,38.74,Recycling,Daily
+Zone E,2023-04-27,Mixed Waste,163.32,Industrial,76.6,Incineration,Monthly
+Zone B,2023-01-22,Plastic Waste,132.08,Industrial,52.81,Recycling,Monthly
+Zone A,2023-06-11,Paper Waste,179.89,Household,53.11,Composting,Weekly
+Zone C,2023-01-15,Textile Waste,474.95,Hospital,60.34,Composting,Bi-Weekly
+Zone E,2023-08-09,Biomedical Waste,220.71,Industrial,10.39,Recycling,Bi-Weekly
+Zone C,2023-08-18,Glass Waste,264.24,Agricultural,27.32,Incineration,Bi-Weekly
+Zone A,2023-05-09,Plastic Waste,21.34,Agricultural,51.33,Recycling,Monthly
+Zone E,2023-07-29,Textile Waste,243.63,Commercial,30.63,Incineration,Daily
+Zone E,2023-01-26,E-Waste,469.73,Commercial,72.73,Incineration,Daily
+Zone E,2023-01-13,Organic Waste,216.67,Hospital,76.54,Composting,Monthly
+Zone B,2023-01-27,Agricultural Waste,20.21,Hospital,51.4,Landfill,Bi-Weekly
+Zone E,2023-04-21,Paper Waste,130.56,Industrial,17.04,Landfill,Daily
+Zone D,2023-04-06,Biomedical Waste,64.64,Commercial,13.31,Incineration,Daily
+Zone D,2023-08-02,Paper Waste,348.18,Commercial,68.48,Recycling,Monthly
+Zone D,2023-11-12,Agricultural Waste,412.57,Industrial,12.94,Composting,Bi-Weekly
+Zone C,2023-07-26,Organic Waste,349.54,Commercial,22.5,Recycling,Monthly
+Zone E,2023-06-24,Biomedical Waste,230.27,Commercial,71.96,Incineration,Monthly
+Zone A,2023-07-25,Construction & Demolition Waste,384.92,Household,68.93,Recycling,Daily
+Zone B,2023-11-01,Construction & Demolition Waste,497.01,Commercial,28.91,Landfill,Monthly
+Zone A,2023-04-30,Hazardous Waste,445.13,Household,57.73,Recycling,Bi-Weekly
+Zone E,2023-11-21,Textile Waste,452.7,Hospital,28.5,Incineration,Weekly
+Zone B,2023-05-08,Construction & Demolition Waste,314.32,Agricultural,57.58,Incineration,Bi-Weekly
+Zone E,2023-06-23,Plastic Waste,420.9,Commercial,17.72,Landfill,Daily
+Zone E,2023-11-01,Paper Waste,360.48,Industrial,57.03,Recycling,Daily
+Zone C,2023-09-30,Construction & Demolition Waste,419.84,Industrial,71.6,Recycling,Monthly
+Zone C,2023-10-14,Mixed Waste,78.87,Commercial,12.79,Composting,Bi-Weekly
+Zone D,2023-06-15,Paper Waste,34.89,Industrial,29.87,Composting,Weekly
+Zone D,2023-03-19,Mixed Waste,499.92,Household,12.09,Incineration,Daily
+Zone B,2023-02-23,Metal Waste,271.84,Household,82.85,Recycling,Monthly
+Zone B,2023-01-19,Metal Waste,208.85,Household,81.1,Composting,Daily
+Zone E,2023-01-11,Hazardous Waste,283.88,Commercial,80.73,Recycling,Daily
+Zone D,2023-08-16,Mixed Waste,492.84,Commercial,61.96,Recycling,Weekly
+Zone C,2023-11-18,Plastic Waste,293.64,Industrial,81.09,Recycling,Weekly
+Zone D,2023-06-10,Metal Waste,243.05,Industrial,76.49,Landfill,Daily
+Zone E,2023-11-06,Metal Waste,132.44,Hospital,80.1,Composting,Weekly
+Zone C,2023-07-23,Mixed Waste,317.71,Hospital,86.39,Recycling,Bi-Weekly
+Zone D,2023-10-04,Biomedical Waste,89.97,Industrial,22.58,Composting,Weekly
+Zone A,2023-02-14,Organic Waste,135.44,Hospital,43.86,Recycling,Daily
+Zone B,2023-08-23,Metal Waste,254.35,Agricultural,12.36,Composting,Monthly
+Zone B,2023-03-17,Glass Waste,219.77,Agricultural,31.21,Recycling,Monthly
+Zone C,2023-08-25,Organic Waste,405.46,Commercial,87.55,Landfill,Bi-Weekly
+Zone B,2023-07-28,Agricultural Waste,354.22,Household,62.84,Landfill,Bi-Weekly
+Zone C,2023-08-06,Glass Waste,240.3,Industrial,20.6,Incineration,Daily
+Zone B,2023-11-22,Agricultural Waste,116.36,Agricultural,24.25,Incineration,Monthly
+Zone C,2023-10-18,Agricultural Waste,12.31,Industrial,59.37,Recycling,Bi-Weekly
+Zone A,2023-01-26,Plastic Waste,352.48,Household,25.25,Recycling,Daily
+Zone D,2023-01-16,Mixed Waste,460.17,Agricultural,31.51,Incineration,Bi-Weekly
+Zone A,2023-01-07,Glass Waste,225.9,Industrial,55.05,Incineration,Weekly
+Zone E,2023-01-10,Plastic Waste,491.11,Hospital,74.94,Landfill,Bi-Weekly
+Zone B,2023-01-15,Biomedical Waste,415.41,Commercial,73.82,Recycling,Daily
+Zone C,2023-12-12,Plastic Waste,264.32,Commercial,73.27,Landfill,Bi-Weekly
+Zone C,2023-10-14,Agricultural Waste,43.92,Industrial,61.01,Incineration,Daily
+Zone D,2023-12-16,Mixed Waste,33.83,Household,19.08,Incineration,Daily
+Zone A,2023-10-22,Agricultural Waste,181.16,Agricultural,71.84,Composting,Daily
+Zone B,2023-09-30,Biomedical Waste,470.66,Hospital,54.69,Recycling,Bi-Weekly
+Zone D,2023-07-13,Construction & Demolition Waste,242.23,Industrial,39.47,Recycling,Weekly
+Zone A,2024-01-01,Construction & Demolition Waste,411.89,Commercial,31.15,Incineration,Monthly
+Zone C,2023-10-14,E-Waste,6.73,Household,60.24,Recycling,Daily
+Zone C,2023-02-17,Paper Waste,147.37,Commercial,64.1,Recycling,Daily
+Zone C,2023-11-30,E-Waste,191.87,Hospital,42.92,Recycling,Bi-Weekly
+Zone A,2023-12-01,Agricultural Waste,59.49,Agricultural,55.9,Recycling,Weekly
+Zone C,2023-03-08,Mixed Waste,114.93,Industrial,17.11,Composting,Monthly
+Zone C,2023-10-11,Metal Waste,407.85,Household,85.18,Landfill,Bi-Weekly
+Zone E,2024-01-01,Biomedical Waste,499.09,Commercial,59.92,Incineration,Monthly
+Zone E,2023-03-04,Biomedical Waste,307.84,Commercial,14.76,Composting,Weekly
+Zone B,2023-06-02,Plastic Waste,436.33,Agricultural,25.28,Landfill,Monthly
+Zone C,2023-04-14,Organic Waste,362.91,Industrial,53.57,Recycling,Monthly
+Zone A,2023-09-28,Agricultural Waste,479.25,Agricultural,25.23,Incineration,Monthly
+Zone D,2023-07-20,Biomedical Waste,356.23,Industrial,74.03,Incineration,Monthly
+Zone B,2023-11-26,Paper Waste,40.15,Hospital,70.33,Landfill,Bi-Weekly
+Zone E,2023-03-07,Mixed Waste,31.76,Hospital,87.23,Landfill,Weekly
+Zone E,2023-03-05,Agricultural Waste,80.93,Industrial,40.98,Recycling,Weekly
+Zone D,2023-08-08,E-Waste,207.12,Industrial,47.33,Incineration,Weekly
+Zone D,2023-02-28,Textile Waste,40.79,Household,66.92,Recycling,Bi-Weekly
+Zone D,2023-10-31,Construction & Demolition Waste,24.68,Hospital,89.74,Composting,Bi-Weekly
+Zone B,2023-11-22,Plastic Waste,91.73,Hospital,38.64,Landfill,Monthly
+Zone E,2023-06-25,Agricultural Waste,267.62,Household,84.73,Incineration,Daily
+Zone E,2023-03-13,Mixed Waste,378.97,Agricultural,74.83,Composting,Bi-Weekly
+Zone C,2023-11-11,Hazardous Waste,448.11,Hospital,81.26,Composting,Bi-Weekly
+Zone A,2023-07-29,Agricultural Waste,429.15,Hospital,23.3,Landfill,Weekly
+Zone E,2023-12-25,E-Waste,237.46,Household,33.73,Composting,Daily
+Zone B,2023-05-06,Glass Waste,28.49,Household,18.59,Incineration,Bi-Weekly
+Zone E,2023-02-07,E-Waste,397.15,Household,12.28,Landfill,Daily
+Zone E,2023-09-06,Hazardous Waste,486.7,Commercial,74.0,Landfill,Monthly
+Zone D,2023-05-16,Glass Waste,266.55,Industrial,34.46,Landfill,Weekly
+Zone A,2023-04-21,E-Waste,335.75,Industrial,27.77,Landfill,Daily
+Zone B,2023-11-10,Construction & Demolition Waste,366.61,Industrial,80.5,Incineration,Daily
+Zone B,2023-06-06,Plastic Waste,445.0,Hospital,63.95,Incineration,Daily
+Zone A,2023-10-03,Plastic Waste,465.58,Commercial,52.57,Incineration,Weekly
+Zone A,2023-07-11,Construction & Demolition Waste,487.45,Household,63.07,Composting,Monthly
+Zone A,2023-11-15,Textile Waste,120.26,Commercial,88.42,Incineration,Daily
+Zone D,2023-07-21,Biomedical Waste,163.84,Commercial,76.99,Composting,Weekly
+Zone C,2023-03-24,Metal Waste,215.34,Industrial,42.93,Recycling,Weekly
+Zone C,2023-10-31,Plastic Waste,161.47,Commercial,12.59,Recycling,Weekly
+Zone C,2023-05-14,Paper Waste,11.76,Agricultural,41.54,Recycling,Monthly
+Zone D,2023-11-20,Mixed Waste,462.65,Industrial,56.97,Recycling,Bi-Weekly
+Zone E,2023-07-13,Agricultural Waste,489.49,Industrial,51.38,Landfill,Monthly
+Zone A,2023-02-07,Textile Waste,334.98,Agricultural,86.54,Incineration,Monthly
+Zone B,2023-11-07,Textile Waste,78.86,Agricultural,28.63,Landfill,Daily
+Zone E,2023-04-01,Agricultural Waste,356.05,Commercial,15.13,Landfill,Monthly
+Zone E,2023-09-03,Hazardous Waste,116.67,Industrial,75.21,Recycling,Daily
+Zone D,2023-02-12,Paper Waste,264.21,Industrial,38.53,Landfill,Weekly
+Zone D,2023-09-29,Hazardous Waste,94.0,Hospital,80.57,Composting,Weekly
+Zone C,2023-01-18,Glass Waste,69.79,Household,42.64,Landfill,Monthly
+Zone A,2023-06-08,Plastic Waste,386.87,Hospital,23.6,Recycling,Daily
+Zone A,2023-01-27,Plastic Waste,198.56,Agricultural,24.65,Incineration,Daily
+Zone A,2023-01-17,Paper Waste,376.15,Hospital,18.28,Incineration,Daily
+Zone D,2023-04-05,Organic Waste,249.34,Industrial,54.15,Recycling,Monthly
+Zone E,2023-11-22,Paper Waste,316.62,Household,58.11,Incineration,Daily
+Zone C,2023-11-30,Biomedical Waste,459.65,Household,69.61,Incineration,Bi-Weekly
+Zone E,2023-06-14,Paper Waste,127.26,Industrial,74.31,Landfill,Weekly
+Zone D,2023-05-09,Mixed Waste,74.58,Hospital,57.5,Incineration,Daily
+Zone A,2023-03-14,E-Waste,385.51,Hospital,44.18,Incineration,Monthly
+Zone A,2023-02-28,Textile Waste,345.02,Household,17.14,Composting,Daily
+Zone D,2023-09-18,E-Waste,178.76,Hospital,24.32,Incineration,Weekly
+Zone D,2023-04-07,Hazardous Waste,475.73,Household,82.76,Composting,Bi-Weekly
+Zone B,2023-08-05,Glass Waste,173.6,Industrial,48.32,Composting,Daily
+Zone A,2023-02-20,Organic Waste,484.42,Household,18.98,Recycling,Weekly
+Zone C,2023-02-13,Textile Waste,246.55,Household,52.32,Composting,Daily
+Zone A,2023-08-19,Metal Waste,394.84,Commercial,54.57,Composting,Monthly
+Zone A,2023-08-22,Construction & Demolition Waste,346.5,Hospital,24.36,Incineration,Bi-Weekly
+Zone A,2023-03-26,Mixed Waste,431.79,Hospital,36.22,Incineration,Daily
+Zone A,2023-03-18,Biomedical Waste,74.56,Commercial,75.16,Composting,Daily
+Zone A,2023-10-31,Paper Waste,175.97,Household,56.93,Composting,Monthly
+Zone D,2023-07-21,Construction & Demolition Waste,258.68,Agricultural,33.78,Landfill,Monthly
+Zone A,2023-06-06,Mixed Waste,218.74,Agricultural,78.64,Composting,Weekly
+Zone A,2023-11-07,Construction & Demolition Waste,211.76,Agricultural,70.47,Composting,Daily
+Zone B,2023-10-20,Plastic Waste,228.9,Agricultural,26.75,Landfill,Weekly
+Zone C,2023-11-12,Biomedical Waste,457.48,Commercial,58.21,Recycling,Monthly
+Zone B,2023-08-05,E-Waste,365.75,Commercial,49.72,Incineration,Monthly
+Zone E,2023-11-25,Textile Waste,366.34,Agricultural,12.05,Recycling,Bi-Weekly
+Zone A,2023-07-18,Hazardous Waste,161.2,Hospital,48.0,Composting,Weekly
+Zone B,2023-03-05,Glass Waste,160.52,Industrial,20.88,Incineration,Bi-Weekly
+Zone B,2023-12-19,Mixed Waste,314.5,Agricultural,48.87,Landfill,Daily
+Zone A,2023-04-30,Plastic Waste,336.79,Hospital,25.57,Landfill,Daily
+Zone E,2023-12-14,E-Waste,40.58,Household,60.64,Composting,Weekly
+Zone E,2023-01-20,Agricultural Waste,84.06,Agricultural,14.17,Incineration,Monthly
+Zone C,2023-03-14,Construction & Demolition Waste,330.34,Industrial,22.6,Incineration,Daily
+Zone C,2023-07-08,Mixed Waste,41.62,Commercial,67.21,Recycling,Monthly
+Zone D,2023-07-05,Textile Waste,309.38,Industrial,58.22,Recycling,Bi-Weekly
+Zone D,2023-01-01,Plastic Waste,63.76,Industrial,29.31,Incineration,Monthly
+Zone A,2023-12-17,Construction & Demolition Waste,365.86,Industrial,45.15,Incineration,Bi-Weekly
+Zone B,2023-12-04,Plastic Waste,363.49,Industrial,86.11,Recycling,Weekly
+Zone E,2023-03-16,Plastic Waste,199.3,Household,59.05,Recycling,Daily
+Zone B,2023-08-18,Metal Waste,115.51,Agricultural,24.27,Composting,Bi-Weekly
+Zone B,2023-03-30,Mixed Waste,227.44,Industrial,46.73,Incineration,Weekly
+Zone D,2023-03-05,Hazardous Waste,123.92,Household,39.83,Landfill,Daily
+Zone E,2023-09-02,Metal Waste,243.95,Hospital,78.29,Composting,Monthly
+Zone A,2023-09-24,Plastic Waste,385.11,Household,64.38,Recycling,Daily
+Zone B,2023-01-17,Plastic Waste,210.71,Commercial,67.84,Incineration,Weekly
+Zone C,2023-10-10,Agricultural Waste,125.43,Household,48.67,Recycling,Monthly
+Zone A,2023-08-31,Organic Waste,456.09,Hospital,41.84,Incineration,Daily
+Zone B,2023-04-18,Agricultural Waste,392.43,Hospital,30.59,Landfill,Weekly
+Zone E,2023-11-18,Textile Waste,179.85,Agricultural,26.29,Incineration,Monthly
+Zone B,2023-02-14,Hazardous Waste,212.34,Household,12.57,Incineration,Bi-Weekly
+Zone D,2023-05-10,Paper Waste,403.14,Household,47.2,Incineration,Bi-Weekly
+Zone D,2023-05-27,Hazardous Waste,211.79,Commercial,35.38,Composting,Bi-Weekly
+Zone D,2023-09-07,Organic Waste,197.62,Agricultural,74.27,Incineration,Monthly
+Zone D,2023-03-27,Metal Waste,470.44,Agricultural,27.56,Incineration,Daily
+Zone D,2023-10-23,Plastic Waste,191.19,Agricultural,74.85,Recycling,Daily
+Zone E,2023-12-07,Glass Waste,297.68,Agricultural,78.92,Composting,Bi-Weekly
+Zone E,2023-11-06,Glass Waste,118.15,Household,85.36,Recycling,Monthly
+Zone A,2023-10-17,Hazardous Waste,376.41,Agricultural,86.69,Composting,Daily
+Zone A,2023-11-10,Paper Waste,209.02,Industrial,62.63,Composting,Monthly
+Zone C,2023-06-17,Construction & Demolition Waste,46.78,Hospital,26.85,Recycling,Monthly
+Zone B,2023-02-27,Metal Waste,284.1,Commercial,69.59,Landfill,Bi-Weekly
+Zone A,2023-05-24,Plastic Waste,29.95,Agricultural,75.81,Recycling,Weekly
+Zone C,2023-12-05,E-Waste,38.75,Household,47.88,Landfill,Monthly
+Zone E,2023-09-27,Textile Waste,239.29,Industrial,57.06,Landfill,Monthly
+Zone C,2023-07-18,E-Waste,457.18,Household,76.13,Recycling,Weekly
+Zone A,2023-08-27,Mixed Waste,253.64,Industrial,21.86,Incineration,Daily
+Zone C,2023-04-08,Biomedical Waste,317.65,Commercial,24.28,Landfill,Bi-Weekly
+Zone C,2023-12-06,Textile Waste,333.15,Hospital,81.06,Incineration,Bi-Weekly
+Zone B,2023-07-18,Glass Waste,316.55,Household,51.12,Recycling,Bi-Weekly
+Zone E,2023-05-13,Agricultural Waste,131.63,Agricultural,39.05,Recycling,Daily
+Zone B,2023-12-21,Construction & Demolition Waste,89.73,Household,12.92,Landfill,Weekly
+Zone A,2023-04-02,Plastic Waste,241.98,Hospital,41.92,Landfill,Daily
+Zone E,2023-03-13,Construction & Demolition Waste,349.92,Industrial,22.88,Landfill,Bi-Weekly
+Zone C,2023-09-07,Biomedical Waste,487.78,Commercial,50.15,Incineration,Weekly
+Zone E,2023-02-13,Agricultural Waste,422.23,Agricultural,79.85,Incineration,Monthly
+Zone A,2023-02-16,Construction & Demolition Waste,421.31,Commercial,11.86,Incineration,Weekly
+Zone A,2023-07-27,E-Waste,379.64,Hospital,47.28,Recycling,Daily
+Zone B,2023-03-17,Plastic Waste,306.63,Industrial,58.69,Recycling,Monthly
+Zone C,2023-08-16,Paper Waste,142.81,Hospital,27.9,Recycling,Bi-Weekly
+Zone B,2023-01-17,Metal Waste,87.24,Household,85.43,Landfill,Weekly
+Zone C,2023-10-20,Hazardous Waste,351.05,Industrial,29.02,Landfill,Daily
+Zone D,2023-03-19,E-Waste,147.63,Commercial,33.19,Recycling,Bi-Weekly
+Zone E,2023-03-25,Construction & Demolition Waste,409.32,Agricultural,54.71,Incineration,Bi-Weekly
+Zone A,2023-08-28,Mixed Waste,390.37,Commercial,24.43,Incineration,Weekly
+Zone A,2023-05-08,Mixed Waste,23.73,Household,56.8,Composting,Monthly
+Zone D,2023-01-23,Hazardous Waste,310.84,Commercial,24.07,Landfill,Bi-Weekly
+Zone D,2023-09-10,Metal Waste,491.95,Hospital,66.77,Landfill,Monthly
+Zone E,2023-05-20,Textile Waste,250.42,Household,19.56,Incineration,Bi-Weekly
+Zone D,2023-07-31,Plastic Waste,406.17,Household,57.93,Landfill,Weekly
+Zone C,2023-12-03,Biomedical Waste,377.83,Household,69.2,Landfill,Bi-Weekly
+Zone B,2023-05-10,Mixed Waste,25.64,Hospital,69.8,Landfill,Weekly
+Zone A,2023-03-09,Mixed Waste,49.96,Agricultural,27.15,Incineration,Daily
+Zone A,2023-09-05,Construction & Demolition Waste,246.51,Hospital,71.78,Incineration,Daily
+Zone E,2023-01-31,Organic Waste,161.78,Agricultural,33.99,Incineration,Bi-Weekly
+Zone D,2023-11-09,Mixed Waste,146.21,Agricultural,69.03,Recycling,Daily
+Zone E,2023-02-10,Plastic Waste,5.46,Hospital,48.11,Incineration,Bi-Weekly
+Zone D,2023-11-06,Paper Waste,306.16,Household,21.13,Landfill,Monthly
+Zone D,2023-02-09,Organic Waste,220.94,Commercial,68.08,Landfill,Weekly
+Zone E,2023-07-05,Mixed Waste,145.86,Industrial,51.52,Landfill,Daily
+Zone D,2023-01-15,Agricultural Waste,290.47,Commercial,87.94,Incineration,Monthly
+Zone D,2023-05-09,Plastic Waste,374.46,Household,16.63,Recycling,Bi-Weekly
+Zone A,2023-10-19,Textile Waste,165.35,Household,60.04,Landfill,Monthly
+Zone B,2023-08-25,Mixed Waste,431.45,Commercial,80.25,Recycling,Daily
+Zone B,2023-06-24,Metal Waste,96.24,Commercial,20.15,Incineration,Daily
+Zone B,2023-01-20,Glass Waste,36.5,Household,80.73,Landfill,Bi-Weekly
+Zone E,2023-11-08,Glass Waste,296.2,Hospital,79.3,Composting,Daily
+Zone A,2023-11-26,Hazardous Waste,274.44,Agricultural,67.14,Landfill,Daily
+Zone C,2023-11-21,Hazardous Waste,493.24,Industrial,11.83,Incineration,Monthly
+Zone A,2023-03-31,Textile Waste,204.96,Industrial,25.41,Landfill,Daily
+Zone E,2023-05-15,Mixed Waste,416.62,Household,80.32,Incineration,Monthly
+Zone B,2023-02-28,Construction & Demolition Waste,30.61,Commercial,88.02,Composting,Monthly
+Zone B,2023-05-09,Construction & Demolition Waste,379.3,Commercial,53.87,Landfill,Bi-Weekly
+Zone C,2023-07-26,Organic Waste,225.84,Hospital,52.88,Incineration,Weekly
+Zone A,2023-01-27,Textile Waste,289.15,Household,44.05,Composting,Monthly
+Zone A,2023-11-28,Glass Waste,489.37,Hospital,83.15,Incineration,Monthly
+Zone D,2023-11-15,Organic Waste,87.53,Hospital,50.72,Incineration,Daily
+Zone A,2023-11-01,Construction & Demolition Waste,205.48,Commercial,53.09,Recycling,Monthly
+Zone C,2023-12-03,Textile Waste,425.4,Industrial,68.41,Composting,Bi-Weekly
+Zone E,2023-06-23,Metal Waste,256.95,Hospital,11.01,Composting,Monthly
+Zone A,2023-03-21,Glass Waste,75.95,Commercial,69.2,Composting,Weekly
+Zone E,2023-02-26,Mixed Waste,246.54,Industrial,49.1,Incineration,Bi-Weekly
+Zone C,2023-07-24,Agricultural Waste,140.62,Household,10.96,Composting,Monthly
+Zone E,2023-12-11,E-Waste,80.85,Household,77.01,Incineration,Monthly
+Zone A,2023-03-08,Glass Waste,302.66,Agricultural,84.68,Landfill,Weekly
+Zone A,2023-03-14,Plastic Waste,406.88,Commercial,49.74,Incineration,Daily
+Zone A,2023-04-23,Glass Waste,321.77,Industrial,70.27,Recycling,Daily
+Zone E,2023-06-20,Construction & Demolition Waste,64.7,Household,23.15,Landfill,Weekly
+Zone D,2023-11-03,Biomedical Waste,288.5,Agricultural,68.38,Recycling,Daily
+Zone C,2023-01-29,Hazardous Waste,109.11,Hospital,86.06,Landfill,Monthly
+Zone B,2023-07-19,Mixed Waste,407.46,Commercial,40.23,Landfill,Weekly
+Zone C,2023-02-01,Metal Waste,400.64,Agricultural,70.52,Recycling,Bi-Weekly
+Zone B,2023-03-10,Organic Waste,406.26,Industrial,19.01,Recycling,Daily
+Zone B,2023-09-16,Plastic Waste,70.04,Agricultural,35.93,Recycling,Weekly
+Zone B,2023-08-08,Textile Waste,111.55,Commercial,33.15,Landfill,Bi-Weekly
+Zone A,2023-08-10,Biomedical Waste,244.38,Household,71.78,Incineration,Bi-Weekly
+Zone E,2023-01-21,Organic Waste,349.02,Industrial,69.14,Composting,Weekly
+Zone A,2023-10-27,Plastic Waste,462.78,Hospital,59.73,Composting,Bi-Weekly
+Zone A,2023-10-30,Mixed Waste,339.96,Industrial,39.9,Incineration,Daily
+Zone C,2023-07-09,Construction & Demolition Waste,408.95,Hospital,74.43,Incineration,Weekly
+Zone C,2023-11-07,Biomedical Waste,395.48,Industrial,79.58,Landfill,Weekly
+Zone B,2023-09-28,Plastic Waste,63.13,Hospital,11.93,Recycling,Monthly
+Zone C,2023-03-05,Paper Waste,381.3,Hospital,88.36,Incineration,Daily
+Zone B,2023-02-03,Construction & Demolition Waste,372.11,Agricultural,26.53,Landfill,Monthly
+Zone E,2023-12-01,Textile Waste,330.43,Commercial,10.62,Incineration,Weekly
+Zone C,2023-04-19,E-Waste,417.06,Commercial,10.35,Landfill,Weekly
+Zone A,2023-01-29,Agricultural Waste,312.76,Agricultural,33.64,Recycling,Daily
+Zone A,2023-10-13,Plastic Waste,295.08,Industrial,89.98,Recycling,Monthly
+Zone A,2023-09-22,Construction & Demolition Waste,411.26,Hospital,73.67,Incineration,Monthly
+Zone A,2023-03-23,Agricultural Waste,452.75,Household,17.99,Landfill,Monthly
+Zone D,2023-10-28,Biomedical Waste,329.5,Commercial,60.39,Composting,Weekly
+Zone D,2023-09-04,Biomedical Waste,304.49,Industrial,19.62,Incineration,Bi-Weekly
+Zone A,2023-01-10,Hazardous Waste,356.03,Agricultural,86.47,Composting,Monthly
+Zone A,2023-01-13,Metal Waste,143.7,Agricultural,67.91,Recycling,Bi-Weekly
+Zone A,2023-09-12,Organic Waste,384.48,Household,76.07,Incineration,Bi-Weekly
+Zone C,2023-10-17,Textile Waste,115.6,Industrial,15.93,Recycling,Bi-Weekly
+Zone C,2023-12-31,Metal Waste,495.82,Industrial,70.01,Landfill,Daily
+Zone E,2023-01-08,Agricultural Waste,168.3,Household,78.65,Incineration,Bi-Weekly
+Zone E,2023-07-18,Glass Waste,319.36,Commercial,63.39,Composting,Bi-Weekly
+Zone C,2023-07-01,Glass Waste,298.33,Industrial,15.15,Recycling,Monthly
+Zone B,2023-07-27,Plastic Waste,361.91,Industrial,46.97,Composting,Bi-Weekly
+Zone C,2023-11-02,Paper Waste,417.0,Hospital,87.09,Composting,Weekly
+Zone A,2023-02-13,Agricultural Waste,284.87,Commercial,65.05,Incineration,Bi-Weekly
+Zone E,2023-10-11,Organic Waste,249.44,Household,80.7,Incineration,Daily
+Zone D,2023-07-16,E-Waste,169.18,Household,88.33,Landfill,Bi-Weekly
+Zone B,2023-05-05,E-Waste,153.16,Hospital,11.34,Incineration,Daily
+Zone D,2023-08-10,Paper Waste,369.99,Household,21.25,Composting,Monthly
+Zone A,2023-07-16,Organic Waste,28.01,Household,69.32,Recycling,Weekly
+Zone E,2023-06-02,Hazardous Waste,108.78,Household,63.22,Composting,Weekly
+Zone D,2023-05-14,Textile Waste,115.78,Agricultural,80.25,Incineration,Weekly
+Zone B,2023-11-02,E-Waste,175.77,Agricultural,81.85,Composting,Monthly
+Zone A,2023-01-11,Hazardous Waste,234.29,Hospital,73.73,Incineration,Weekly
+Zone D,2023-07-13,Paper Waste,486.17,Commercial,70.78,Recycling,Monthly
+Zone C,2023-06-19,Plastic Waste,220.77,Industrial,46.97,Recycling,Daily
+Zone C,2023-07-23,Biomedical Waste,392.69,Commercial,77.88,Landfill,Bi-Weekly
+Zone B,2023-06-28,Glass Waste,279.76,Agricultural,14.88,Incineration,Weekly
+Zone B,2023-07-05,Agricultural Waste,172.79,Household,45.73,Landfill,Daily
+Zone D,2023-03-03,Plastic Waste,175.36,Commercial,37.29,Landfill,Bi-Weekly
+Zone B,2023-02-22,Plastic Waste,242.68,Commercial,47.11,Landfill,Weekly
+Zone C,2023-01-22,Hazardous Waste,456.24,Household,67.13,Landfill,Monthly
+Zone C,2023-06-15,Mixed Waste,48.74,Hospital,42.9,Landfill,Monthly
+Zone B,2023-11-26,Metal Waste,173.39,Agricultural,25.81,Composting,Daily
+Zone C,2023-10-01,Mixed Waste,238.34,Agricultural,34.9,Composting,Weekly
+Zone B,2023-06-01,Organic Waste,415.27,Industrial,82.94,Incineration,Daily
+Zone A,2023-04-24,Hazardous Waste,295.1,Commercial,55.15,Recycling,Daily
+Zone A,2023-09-18,Textile Waste,298.12,Industrial,42.18,Landfill,Bi-Weekly
+Zone B,2023-05-15,Metal Waste,496.77,Agricultural,71.03,Landfill,Monthly
+Zone B,2023-12-26,Mixed Waste,36.87,Industrial,23.05,Recycling,Monthly
+Zone D,2023-06-27,Textile Waste,456.33,Household,44.55,Composting,Weekly
+Zone A,2023-08-21,Biomedical Waste,476.73,Hospital,69.2,Recycling,Monthly
+Zone B,2023-06-18,Mixed Waste,301.32,Industrial,42.24,Incineration,Bi-Weekly
+Zone D,2023-07-22,E-Waste,138.45,Agricultural,41.45,Landfill,Monthly
+Zone A,2023-01-11,Biomedical Waste,65.54,Commercial,49.67,Recycling,Bi-Weekly
+Zone C,2023-02-09,Hazardous Waste,371.69,Household,38.8,Incineration,Monthly
+Zone B,2023-08-09,Paper Waste,397.98,Household,35.3,Incineration,Weekly
