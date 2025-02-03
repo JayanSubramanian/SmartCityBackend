@@ -22,7 +22,7 @@ def generate_synthetic_data():
                                n_redundant=0, n_classes=2, flip_y=0.05, class_sep=1.5, random_state=42)
     return X, y
 
-# Step 2: Preprocess the Data
+# Generate synthetic data
 X, y = generate_synthetic_data()
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
@@ -47,7 +47,6 @@ print(conf_matrix)
 print("\nClassification Report:")
 print(report)
 
-# Step 5: Visualize Decision Boundaries (for the first two features)
 def plot_decision_boundaries(X, y, model, title):
     h = 0.02  # Step size in the mesh
     x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
