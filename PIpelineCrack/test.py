@@ -5,10 +5,10 @@ from sklearn.preprocessing import StandardScaler
 import joblib
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 # Load the dataset
-data = pd.read_csv('/Users/rash/Documents/Files/Self/College/Semester 4/Projects/SmartCityBackend/PipelineCrack/testdata.csv')
+data = pd.read_csv('/Users/rash/Documents/Files/Self/College/Semester 4/Projects/SmartCityBackend/PipelineCrack/synthetic_pipeline_crack_data.csv')
 
 # Features and target variable
-X = data.drop(['Unnamed: 0', 'Class Label'], axis=1)
+X = data.drop(['Class Label'], axis=1)
 y = data['Class Label']
 
 # Splitting the dataset into training and testing sets
