@@ -61,7 +61,7 @@ def generate_synthetic_data(class_label, crack_growth, acoustic_signal, leakage_
         duration = max(0.5, min(5, crack_growth[i] * 1000))  # Scaled from crack growth rate
         rise_time = max(0.1, duration / 10)  # Proportional to duration
         counts = max(5, min(50, int(leakage_data[i] * 1e6)))  # Related to leakage rate
-        energy = amplitude * duration
+        energy = 1/2(amplitude)(amplitude) * duration
         peak_frequency = max(10, min(100, 50 + crack_growth[i] * 1000))  # Frequency shift with damage
         rms_voltage = amplitude / 10
         # Example: Introduce variation in attenuation based on material heterogeneity and crack geometry
