@@ -1,0 +1,44 @@
+Session: ClassificationLearnerSession,,,,,,,
+Training Data: synthetic_pipeline_crack_data    Observations: 800,,,,,,,
+"Predictors: 8    Predictor Names: Amplitude_dB_, Duration_ms_, RiseTime_ms_, Counts, Energy_a_u__, PeakFrequency_kHz_, RMSVoltage_V_, SignalAttenuation_dB_m_",,,,,,,
+"Response Name: ClassLabel    Response Classes: 2    Response Class Names: 0, 1",,,,,,,
+Validation: 5-fold cross-validation,,,,,,,
+Test Data: synthetic_pipeline_crack_data    Observations: 200,,,,,,,
+,,,,,,,
+,,,,,,,
+Favorite,Model Number,Model Type,Status,Accuracy % (Validation),Total Cost (Validation),Accuracy % (Test),Total Cost (Test)
+0,2.30,Neural Network,Tested,99.875,1,100,0
+0,1,Tree,Tested,99.75,2,99.5,1
+0,2.1,Tree,Tested,99.75,2,99.5,1
+0,2.2,Tree,Tested,99.75,2,99.5,1
+0,2.3,Tree,Tested,99.75,2,99.5,1
+0,2.6,Binary GLM Logistic Regression,Tested,99.75,2,100,0
+0,2.24,Ensemble,Tested,99.75,2,99.5,1
+0,2.28,Neural Network,Tested,99.75,2,100,0
+0,2.29,Neural Network,Tested,99.75,2,100,0
+0,2.31,Neural Network,Tested,99.625,3,99.5,1
+0,2.32,Neural Network,Tested,99.625,3,100,0
+0,2.13,SVM,Tested,98.75,10,98.5,3
+0,2.12,SVM,Tested,97.5,20,98.5,3
+0,2.14,SVM,Tested,97.375,21,97,6
+0,2.17,KNN,Tested,96.875,25,97.5,5
+0,2.11,SVM,Tested,96.25,30,97.5,5
+0,2.22,KNN,Tested,95.25,38,97,6
+0,2.15,SVM,Tested,94.875,41,96.5,7
+0,2.21,KNN,Tested,94.625,43,95.5,9
+0,2.18,KNN,Tested,93.875,49,95,10
+0,2.20,KNN,Tested,93.375,53,95,10
+0,2.16,SVM,Tested,88.875,89,92,16
+0,2.25,Ensemble,Tested,87.625,99,90.5,19
+0,2.19,KNN,Tested,86.5,108,90.5,19
+0,2.10,Naive Bayes,Tested,79.125,167,80,40
+0,2.7,Efficient Logistic Regression,Tested,76.375,189,75.5,49
+0,2.26,Ensemble,Tested,70.25,238,65,70
+0,2.33,Kernel,Tested,61.125,311,54.5,91
+0,2.34,Kernel,Tested,60.875,313,54.5,91
+0,2.8,Efficient Linear SVM,Tested,60.625,315,73,54
+0,2.23,Ensemble,Tested,50,400,50,100
+0,2.27,Ensemble,Tested,50,400,50,100
+0,2.4,Discriminant,Failed,NaN,NaN,NaN,NaN
+0,2.5,Discriminant,Failed,NaN,NaN,NaN,NaN
+0,2.9,Naive Bayes,Failed,NaN,NaN,NaN,NaN
