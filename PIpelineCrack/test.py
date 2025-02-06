@@ -7,6 +7,11 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 # Load the dataset
 data = pd.read_csv('/Users/rash/Documents/Files/Self/College/Semester 4/Projects/SmartCityBackend/PipelineCrack/synthetic_pipeline_crack_data.csv')
 
+
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+
+
 # Features and target variable
 X = data.drop(['Class Label'], axis=1)
 y = data['Class Label']
@@ -20,7 +25,7 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
 # SVC model
-svc_model = SVC(kernel='rbf', random_state=42)
+svc_model = SVC(kernel='rbf', gamma=0.1,C = 1)
 svc_model.fit(X_train_scaled, y_train)
 
 # Save the model and scaler for future use
