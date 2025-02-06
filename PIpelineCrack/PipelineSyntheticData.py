@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from scipy.integrate import solve_ivp
 
-# --- 1. Crack Growth Simulation ---
 # Paris' Law with Temperature, Stress Corrosion, and Material Heterogeneity
 def crack_growth_with_factors(t, a, C0=1e-10, m=3.0, sigma=200, T=298, H2S=0, C_threshold=1e-4, alpha=0.5, beta=2, mu=0.5, pi=np.pi):
     # Temperature effect (Arrhenius-like equation for temperature dependence)
@@ -30,7 +29,6 @@ time_eval = np.linspace(*time_span, 500)  # Time points for evaluation
 sol_cracked_with_factors = solve_ivp(crack_growth_with_factors, time_span, [a0], t_eval=time_eval, method='RK45')
 sol_normal = solve_ivp(normal_pipe, time_span, [a0], t_eval=time_eval, method='RK45')
 
-# --- 2. Simulate Acoustic Sensor Data (Noisy Waveform) ---
 def generate_burst_noise(N, burst_probability=0.1, burst_strength=10):
     # Generate burst noise with given probability and strength
     burst_signal = np.random.normal(0, 1, N)
@@ -46,14 +44,12 @@ burst_noise_cracked = generate_burst_noise(N, burst_probability=0.1, burst_stren
 acoustic_signal_cracked = np.sin(2 * np.pi * 50 * time_signal) + 0.5 * burst_noise_cracked
 acoustic_signal_normal = np.sin(2 * np.pi * 50 * time_signal) + 0.1 * np.random.randn(500)
 
-# --- 3. Simulate Fluid Leakage Data ---
 def leakage_pressure_drop(time, Q, k=1e-12, A=1e-4, mu=0.001, dPdx=1e5, crack_factor=1):
     return crack_factor * (k * A / mu * dPdx)  # Without random noise for consistency
 
 leakage_data_normal = [leakage_pressure_drop(t, Q=0.01, crack_factor=1) for t in time_eval]
 leakage_data_cracked = [leakage_pressure_drop(t, Q=0.01, crack_factor=10) for t in time_eval]  # More leakage
 
-# --- 4. Generate Synthetic Dataset ---
 def generate_synthetic_data(class_label, crack_growth, acoustic_signal, leakage_data):
     data = []
     for i in range(len(crack_growth)):
@@ -92,7 +88,6 @@ axs[0].set_ylabel("Crack Length (m)")
 axs[0].set_title("Crack Growth Over Time")
 axs[0].legend()
 
-# Plot Acoustic Sensor Signal
 axs[1].plot(time_signal, acoustic_signal_normal, label='Normal Pipe', color='b')
 axs[1].plot(time_signal, acoustic_signal_cracked, label='Cracked Pipe', color='r', linestyle='dashed')
 axs[1].set_xlabel("Time (s)")
@@ -100,13 +95,7 @@ axs[1].set_ylabel("Amplitude")
 axs[1].set_title("Simulated Noisy Acoustic Waveform")
 axs[1].legend()
 
-# Plot Fluid Leakage Data
-axs[2].plot(time_eval, leakage_data_normal, label='Normal Pipe', color='b')
-axs[2].plot(time_eval, leakage_data_cracked, label='Cracked Pipe', color='r', linestyle='dashed')
-axs[2].set_xlabel("Time (hours)")
-axs[2].set_ylabel("Leakage Rate (m³/s)")
-axs[2].set_title("Simulated Fluid Leakage Over Time")
-axs[2].legend()
+
 
 plt.tight_layout()
 plt.show()
