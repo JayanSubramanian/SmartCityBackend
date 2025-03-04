@@ -1,12 +1,8 @@
 import numpy as np
-import torch
 import matplotlib.pyplot as plt
 import pandas as pd
-from scipy.integrate import solve_ivp
 from scipy.signal import welch
-from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
 from sklearn.neural_network import MLPRegressor
 
 def crack_growth_with_factors(t, a, C0=1e-10, m=3.0, sigma=200, T=298, H2S=0, C_threshold=1e-4, alpha=0.5, beta=2, mu=0.5, pi=np.pi):
