@@ -5,55 +5,80 @@ from scipy.signal import welch
 from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPRegressor
 
-def crack_growth_with_factors(t, a, C0=1e-10, m=3.0, sigma=200, T=298, H2S=0, C_threshold=1e-4, alpha=0.5, beta=2, mu=0.5, pi=np.pi):
-    C_T = C0 * np.exp(-mu / (8.314 * T))
-    SCC_factor = alpha * (H2S / C_threshold) ** beta
-    C_x = np.random.normal(1.0, 0.1)
-    return C_T * (sigma * np.sqrt(pi * a)) ** m * (1 + SCC_factor) * C_x
-
-def generate_burst_noise(N, probability=0.1, strength=10):
-    noise = np.random.normal(0, 1, N)
-    bursts = np.random.rand(N) < probability
-    noise[bursts] += np.random.normal(0, strength, np.sum(bursts))
-    return noise
-
-def generate_fem_data(samples=20):
-    crack_sizes = np.linspace(0.001, 0.02, samples)
+# Create FEM surrogate model
+def initialize_fem_surrogate():
+    # Generate training data
+    crack_sizes = np.linspace(0.001, 0.02, 20)
     fem_wave_responses = np.sin(2 * np.pi * 50 * crack_sizes)
-    return crack_sizes.reshape(-1, 1), fem_wave_responses
+    
+    # Scale and train model
+    scaler = StandardScaler()
+    crack_sizes_scaled = scaler.fit_transform(crack_sizes.reshape(-1, 1))
+    gp_model = MLPRegressor(hidden_layer_sizes=(10,), max_iter=500)
+    gp_model.fit(crack_sizes_scaled, fem_wave_responses)
+    
+    return gp_model, scaler
 
-fem_inputs, fem_outputs = generate_fem_data()
-scaler = StandardScaler()
-fem_inputs_scaled = scaler.fit_transform(fem_inputs)
-gp_model = MLPRegressor(hidden_layer_sizes=(10,), max_iter=500)
-gp_model.fit(fem_inputs_scaled, fem_outputs)
-
-def predict_fem(crack_size):
-    crack_size_scaled = scaler.transform([[crack_size]])
-    return gp_model.predict(crack_size_scaled)[0]
-
-def leakage_pressure_drop(crack_size, P1=1e5, P2=9e4, rho=1000, Cd=0.62, A_ref=1e-4):
-    A = A_ref * (crack_size / 0.01)
-    velocity = np.sqrt(2 * (P1 - P2) / rho)
-    flow_rate = Cd * A * velocity
-    delta_P = rho * (velocity ** 2) / 2
-    return delta_P, flow_rate
-
-def compute_spectral_entropy(signal, fs=500):
-    freqs, psd = welch(signal, fs=fs)
-    psd_norm = psd / np.sum(psd)
-    entropy = -np.sum(psd_norm * np.log2(psd_norm))
-    return entropy
+# Initialize FEM surrogate model once
+gp_model, scaler = initialize_fem_surrogate()
 
 def generate_synthetic_data(N=500):
     data = []
     for _ in range(N):
+        # Generate crack size
         a = np.random.uniform(0.001, 0.02)
-        fem_approx = predict_fem(a)
-        burst_noise = generate_burst_noise(500)
-        wave_signal = np.sin(2 * np.pi * 50 * np.linspace(0, 1, 500)) + 0.5 * burst_noise
-        delta_P, flow_rate = leakage_pressure_drop(a)
-        entropy = compute_spectral_entropy(wave_signal)
+        
+        # Calculate crack growth with environmental factors
+        C0 = 1e-10
+        m = 3.0
+        sigma = 200
+        T = 298 + np.random.normal(0, 10)
+        H2S = np.random.uniform(0, 0.001)
+        C_threshold = 1e-4
+        alpha = 0.5
+        beta = 2
+        mu = 0.5
+        pi = np.pi
+        
+        # Integrated crack growth calculations
+        C_T = C0 * np.exp(-mu / (8.314 * T))
+        SCC_factor = alpha * (H2S / C_threshold) ** beta
+        C_x = np.random.normal(1.0, 0.1)
+        growth_rate = C_T * (sigma * np.sqrt(pi * a)) ** m * (1 + SCC_factor) * C_x
+        
+        # Calculate FEM approximation using the surrogate model
+        crack_size_scaled = scaler.transform([[a]])
+        fem_approx = gp_model.predict(crack_size_scaled)[0]
+        
+        # Generate signal and noise components
+        burst_probability = 0.1
+        burst_strength = 10
+        signal_length = 500
+        
+        # Create wave signal with integrated noise
+        base_signal = np.sin(2 * np.pi * 50 * np.linspace(0, 1, signal_length))
+        noise = np.random.normal(0, 1, signal_length)
+        bursts = np.random.rand(signal_length) < burst_probability
+        noise[bursts] += np.random.normal(0, burst_strength, np.sum(bursts))
+        wave_signal = base_signal + 0.5 * noise
+        
+        # Calculate pressure and flow parameters
+        P1 = 1e5
+        P2 = 9e4
+        rho = 1000
+        Cd = 0.62
+        A_ref = 1e-4
+        A = A_ref * (a / 0.01)
+        velocity = np.sqrt(2 * (P1 - P2) / rho)
+        flow_rate = Cd * A * velocity
+        delta_P = rho * (velocity ** 2) / 2
+        
+        # Calculate spectral features
+        freqs, psd = welch(wave_signal, fs=500)
+        psd_norm = psd / np.sum(psd)
+        entropy = -np.sum(psd_norm * np.log2(psd_norm + 1e-10))  # Added small value to avoid log(0)
+        
+        # Calculate derived acoustic emission parameters
         amplitude = np.max(np.abs(wave_signal)) * 100
         duration = max(0.5, min(5, a * 1000))
         rise_time = duration / 10
@@ -61,16 +86,32 @@ def generate_synthetic_data(N=500):
         energy = 0.5 * amplitude * amplitude * duration
         peak_frequency = max(10, min(100, 50 + a * 1000))
         rms_voltage = amplitude / 10
+        
+        # Material and geometry factors
         material_factor = np.random.normal(1.0, 0.1)
         crack_direction_factor = np.cos(np.random.uniform(0, np.pi))
         signal_attenuation = max(0.1, min(5, a * 100 * material_factor * crack_direction_factor))
-        data.append([a, fem_approx, amplitude, duration, rise_time, counts, energy, peak_frequency, rms_voltage, signal_attenuation, delta_P, flow_rate, entropy])
+        
+        # Store all parameters
+        data.append([a, fem_approx, amplitude, duration, rise_time, counts, energy, 
+                    peak_frequency, rms_voltage, signal_attenuation, delta_P, 
+                    flow_rate, entropy, growth_rate])
+    
     return np.array(data)
 
+# Generate data
 data = generate_synthetic_data()
-dataset = pd.DataFrame(data, columns=["CrackSize", "FEM_Approx", "Amplitude (dB)", "Duration (ms)", "Rise Time (ms)", "Counts", "Energy (a.u.)", "Peak Frequency (kHz)", "RMS Voltage (V)", "Signal Attenuation (dB/m)", "PressureDrop", "FlowRate", "SpectralEntropy"])
+dataset = pd.DataFrame(data, columns=["CrackSize", "FEM_Approx", "Amplitude (dB)", 
+                                     "Duration (ms)", "Rise Time (ms)", "Counts", 
+                                     "Energy (a.u.)", "Peak Frequency (kHz)", 
+                                     "RMS Voltage (V)", "Signal Attenuation (dB/m)", 
+                                     "PressureDrop", "FlowRate", "SpectralEntropy",
+                                     "GrowthRate"])
+
+# Save to CSV
 dataset.to_csv("hybrid_synthetic_ultrasonic_data.csv", index=False)
 
+# Visualize results
 fig, axs = plt.subplots(3, 1, figsize=(8, 12))
 axs[0].plot(data[:, 0], data[:, 2], label='Amplitude vs Crack Size', color='r')
 axs[0].set_xlabel("Crack Size (m)")
@@ -93,4 +134,4 @@ axs[2].legend()
 plt.tight_layout()
 plt.show()
 
-print("Hybrid Synthetic Data Generation Complete!")
+print("Consolidated Hybrid Synthetic Data Generation Complete!")
