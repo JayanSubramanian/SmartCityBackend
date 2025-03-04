@@ -14,7 +14,7 @@ def crack_growth_with_factors(t, a, C0=1e-10, m=3.0, sigma=200, T=298, H2S=0, C_
 
 def simulate_crack_growth(a0=0.005, time_span=(0, 1000), time_eval=np.linspace(0, 1000, 500)):
     sol = solve_ivp(crack_growth_with_factors, time_span, [a0], t_eval=time_eval, method='RK45')
-    return sol.t, sol.y[0]
+    return sol.t, sol.y[0], sol.y[0][1:] - sol.y[0][:-1]
 
 def generate_burst_noise(N, probability=0.1, strength=10):
     noise = np.random.normal(0, 1, N)
@@ -50,12 +50,15 @@ def compute_spectral_entropy(signal, fs=500):
     entropy = -np.sum(psd_norm * np.log2(psd_norm + 1e-10))
     return entropy
 
-time_values, crack_sizes = simulate_crack_growth()
+time_values, crack_sizes, growth_rates = simulate_crack_growth()
+
+growth_rates = np.append(growth_rates, growth_rates[-1])
 
 def generate_synthetic_data(N=500):
     data = []
     for i in range(N):
         a = crack_sizes[i % len(crack_sizes)]
+        growth_rate = growth_rates[i % len(growth_rates)]
         fem_approx = predict_fem(a)
         burst_noise = generate_burst_noise(500)
         wave_signal = np.sin(2 * np.pi * 50 * np.linspace(0, 1, 500)) + 0.5 * burst_noise
@@ -71,33 +74,11 @@ def generate_synthetic_data(N=500):
         material_factor = np.random.normal(1.0, 0.1)
         crack_direction_factor = np.cos(np.random.uniform(0, np.pi))
         signal_attenuation = max(0.1, min(5, a * 100 * material_factor * crack_direction_factor))
-        data.append([time_values[i % len(time_values)], a, fem_approx, amplitude, duration, rise_time, counts, energy, peak_frequency, rms_voltage, signal_attenuation, delta_P, flow_rate, entropy])
+        data.append([time_values[i % len(time_values)], a, fem_approx, amplitude, duration, rise_time, counts, energy, peak_frequency, rms_voltage, signal_attenuation, delta_P, flow_rate, entropy, growth_rate])
     return np.array(data)
 
 data = generate_synthetic_data()
-dataset = pd.DataFrame(data, columns=["Time (hours)", "CrackSize", "FEM_Approx", "Amplitude (dB)", "Duration (ms)", "Rise Time (ms)", "Counts", "Energy (a.u.)", "Peak Frequency (kHz)", "RMS Voltage (V)", "Signal Attenuation (dB/m)", "PressureDrop", "FlowRate", "SpectralEntropy"])
+dataset = pd.DataFrame(data, columns=["Time (hours)", "CrackSize", "FEM_Approx", "Amplitude (dB)", "Duration (ms)", "Rise Time (ms)", "Counts", "Energy (a.u.)", "Peak Frequency (kHz)", "RMS Voltage (V)", "Signal Attenuation (dB/m)", "PressureDrop", "FlowRate", "SpectralEntropy", "GrowthRate"])
 dataset.to_csv("hybrid_synthetic_ultrasonic_data.csv", index=False)
 
-fig, axs = plt.subplots(3, 1, figsize=(8, 12))
-axs[0].plot(data[:, 1], data[:, 3], label='Amplitude vs Crack Size', color='r')
-axs[0].set_xlabel("Crack Size (m)")
-axs[0].set_ylabel("Amplitude (dB)")
-axs[0].set_title("Amplitude vs Crack Size")
-axs[0].legend()
-
-axs[1].plot(data[:, 1], data[:, 10], label='Pressure Drop vs Crack Size', color='b')
-axs[1].set_xlabel("Crack Size (m)")
-axs[1].set_ylabel("Pressure Drop (Pa)")
-axs[1].set_title("Pressure Drop vs Crack Size")
-axs[1].legend()
-
-axs[2].plot(data[:, 1], data[:, 8], label='Peak Frequency vs Crack Size', color='g')
-axs[2].set_xlabel("Crack Size (m)")
-axs[2].set_ylabel("Peak Frequency (kHz)")
-axs[2].set_title("Peak Frequency vs Crack Size")
-axs[2].legend()
-
-plt.tight_layout()
-plt.show()
-
-print("Hybrid Synthetic Data Generation Complete with Crack Growth Simulation!")
+print("Hybrid Synthetic Data Generation Complete with Crack Growth Simulation and GrowthRate Restoration!")
