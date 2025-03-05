@@ -6,6 +6,8 @@ from scipy.signal import welch
 from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPRegressor
 
+np.random.seed(42)
+
 def crack_growth_with_factors(t, a, C0=1e-10, m=3.0, sigma=200, T=298, H2S=0, C_threshold=1e-4, alpha=0.5, beta=2, mu=0.5, pi=np.pi):
     C_T = C0 * np.exp(-mu / (8.314 * T))
     SCC_factor = alpha * (H2S / C_threshold) ** beta
@@ -14,7 +16,12 @@ def crack_growth_with_factors(t, a, C0=1e-10, m=3.0, sigma=200, T=298, H2S=0, C_
 
 def simulate_crack_growth(a0=0.005, time_span=(0, 1000), time_eval=np.linspace(0, 1000, 500)):
     sol = solve_ivp(crack_growth_with_factors, time_span, [a0], t_eval=time_eval, method='RK45')
-    return sol.t, sol.y[0], sol.y[0][1:] - sol.y[0][:-1]
+    t_values = sol.t
+    crack_sizes = sol.y[0]
+    growth_rates = np.zeros_like(crack_sizes)
+    growth_rates[1:] = crack_sizes[1:] - crack_sizes[:-1]
+    growth_rates[0] = growth_rates[1]
+    return t_values, crack_sizes, growth_rates
 
 def generate_burst_noise(N, probability=0.1, strength=10):
     noise = np.random.normal(0, 1, N)
@@ -22,7 +29,7 @@ def generate_burst_noise(N, probability=0.1, strength=10):
     noise[bursts] += np.random.normal(0, strength, np.sum(bursts))
     return noise
 
-def generate_fem_data(samples=20):
+def generate_fem_data(samples=50):
     crack_sizes = np.linspace(0.001, 0.02, samples)
     fem_wave_responses = np.sin(2 * np.pi * 50 * crack_sizes)
     return crack_sizes.reshape(-1, 1), fem_wave_responses
@@ -30,7 +37,7 @@ def generate_fem_data(samples=20):
 fem_inputs, fem_outputs = generate_fem_data()
 scaler = StandardScaler()
 fem_inputs_scaled = scaler.fit_transform(fem_inputs)
-gp_model = MLPRegressor(hidden_layer_sizes=(10,), max_iter=500)
+gp_model = MLPRegressor(hidden_layer_sizes=(10, 5), max_iter=1000, random_state=42)
 gp_model.fit(fem_inputs_scaled, fem_outputs)
 
 def predict_fem(crack_size):
@@ -45,20 +52,31 @@ def leakage_pressure_drop(crack_size, P1=1e5, P2=9e4, rho=1000, Cd=0.62, A_ref=1
     return delta_P, flow_rate
 
 def compute_spectral_entropy(signal, fs=500):
-    freqs, psd = welch(signal, fs=fs)
-    psd_norm = psd / np.sum(psd)
-    entropy = -np.sum(psd_norm * np.log2(psd_norm + 1e-10))
-    return entropy
+    _, psd = welch(signal, fs=fs)
+    total_psd = np.sum(psd)
+    if total_psd > 0:
+        psd_norm = psd / total_psd
+        mask = psd_norm > 0
+        entropy = -np.sum(psd_norm[mask] * np.log2(psd_norm[mask]))
+        return entropy
+    else:
+        return 0.0
 
 time_values, crack_sizes, growth_rates = simulate_crack_growth()
 
-growth_rates = np.append(growth_rates, growth_rates[-1])
-
 def generate_synthetic_data(N=500):
     data = []
+    n_samples = len(crack_sizes)
+    
     for i in range(N):
-        a = crack_sizes[i % len(crack_sizes)]
-        growth_rate = growth_rates[i % len(growth_rates)]
+        idx = i % n_samples
+        a = crack_sizes[idx]
+        growth_rate = growth_rates[idx]
+        
+        if i >= n_samples:
+            a += np.random.normal(0, 0.0005)
+            a = max(0.001, a)
+            
         fem_approx = predict_fem(a)
         burst_noise = generate_burst_noise(500)
         wave_signal = np.sin(2 * np.pi * 50 * np.linspace(0, 1, 500)) + 0.5 * burst_noise
