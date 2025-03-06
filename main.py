@@ -1,15 +1,14 @@
-from fastapi import FastAPI, UploadFile, Query, HTTPException, Request
+from fastapi import FastAPI, UploadFile, File, Query, HTTPException, Request
 from fastapi.responses import JSONResponse
-import torch
-from LungCancer.final_code import GATWithDimensionalityReduction, in_channels, hidden_channels, out_channels, reduce_dim, num_heads
 from starlette.responses import RedirectResponse
-from LungCancer.engine import run_model
 from typing import List
 from fastapi.middleware.cors import CORSMiddleware
 import overpy
 import os
 import uvicorn
 from WasteClassification.chat import config, inverse_kinematics, process_image, run_chat_model
+from Biomedical_Imaging.engine import run_model
+import tensorflow as tf
 
 app = FastAPI()
 
@@ -21,17 +20,22 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = GATWithDimensionalityReduction(in_channels=in_channels, hidden_channels=hidden_channels, out_channels=out_channels, reduce_dim=reduce_dim, num_heads=num_heads)
-model.load_state_dict(torch.load("GATWithDimensionalityReduction.pth", map_location=torch.device('cpu'), weights_only=True))
-model.eval()
+mri_model = tf.keras.models.load_model("Biomedical_Imaging/MRI/DenseNet121_MRI.h5")
+xray_model = tf.keras.models.load_model("Biomedical_Imaging/XRay/DenseNet121_XRay.h5")
 
 config()
 
-@app.post("/predict")
-async def predict(files: List[UploadFile]):
-    risk = await run_model(files)
-    response_data = {"risk": round(risk*100, 2)}
+@app.post("/mri")
+async def predict(image: UploadFile = File(...)):
+    tumor_type = await run_model("MRI", image)
+    response_data = {"TumorType": tumor_type}
+    print(response_data)
+    return JSONResponse(content=response_data)
 
+@app.post("/xray")
+async def predict(image: UploadFile = File(...)):
+    tumor_type = await run_model("XRay", image)
+    response_data = {"TumorType": tumor_type}
     print(response_data)
     return JSONResponse(content=response_data)
 
@@ -64,8 +68,8 @@ async def search_poi(
     return result[:limit]
 
 @app.post("/process_image")
-def process_image():
-    img_str, file = process_image(Request)
+async def process(image: UploadFile = File(...)):
+    img_str, file = await process_image(image)
 
     classification_result = run_chat_model(img_str, file)
 

@@ -14,7 +14,7 @@ x = base_model.output
 x = GlobalAveragePooling2D()(x)
 x = Dense(512, activation='relu')(x)
 x = Dropout(0.3)(x)
-output = Dense(4, activation='softmax')(x)
+output = Dense(2, activation='softmax')(x)
 
 model = Model(inputs=base_model.input, outputs=output)
 
@@ -62,3 +62,5 @@ model.fit(train_data, epochs=10, validation_data=val_data)
 
 test_loss, test_acc = model.evaluate(test_data)
 print(f"Test Accuracy: {test_acc:.4f}")
+
+model.save("DenseNet121_XRay.h5")

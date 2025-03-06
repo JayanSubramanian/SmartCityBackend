@@ -62,3 +62,5 @@ model.fit(train_data, epochs=10, validation_data=val_data)
 
 test_loss, test_acc = model.evaluate(test_data)
 print(f"Test Accuracy: {test_acc:.4f}")
+
+model.save("DenseNet121_MRI.h5")
