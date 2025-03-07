@@ -3,7 +3,7 @@ from tensorflow.keras.preprocessing import image as keras_image
 from fastapi import UploadFile
 import io
 
-mri_model = tf.keras.models.load_model("Biomedical_Imaging/MRI/DenseNet121_MRI.h5")
+mri_model = tf.keras.models.load_model("Biomedical_Imaging/MRI/MRI_DenseNet121_Optimized.h5")
 xray_model = tf.keras.models.load_model("Biomedical_Imaging/XRay/DenseNet121_XRay.h5")
 
 async def run_model(image_type, file: UploadFile):
@@ -13,6 +13,7 @@ async def run_model(image_type, file: UploadFile):
   img_bytes = await file.read()
   img = keras_image.load_img(io.BytesIO(img_bytes), target_size=(224, 224))
   img_array = keras_image.img_to_array(img)
+  img_array = img_array / 255.0
   img_array = tf.expand_dims(img_array, 0)
 
   if image_type == "MRI":
